@@ -1,6 +1,6 @@
 # Trust No One. Architecture & Functional Requirements
 
-**Project:** Antiquarian Shop
+**Project:** Antique Shop
 
 **Engine:** Unity
 
@@ -8,7 +8,7 @@
 
 ## 1. Overview
 
-The player works in an antiquarian shop. Customers arrive one at a time, present an item with a spoken claim about it (material, size, origin, age) and name a price. The player may inspect the item with a set of physical tools, then **accept** or **decline** the offer.
+The player works in an antique shop. Customers arrive one at a time, present an item with a spoken claim about it (material, size, origin, age) and name a price. The player may inspect the item with a set of physical tools, then **accept** or **decline** the offer.
 
 The core tension: the customer's *claim* and the item's *truth* are two separate pieces of data. Every deal is a bet on information retrieved with tools.
 
