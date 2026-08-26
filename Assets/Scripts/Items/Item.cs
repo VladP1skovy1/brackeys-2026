@@ -10,5 +10,7 @@ namespace AntiqueShop.Items
         [field: SerializeField] public float RealPrice { get; private set; }
         [field: SerializeField] public Claim CustomerClaim { get; private set; }
         [field: SerializeField] public bool IsAuthentic { get; private set; }
+
+        public string Type => GetType().Name;
     }
 }

@@ -1,0 +1,30 @@
+using UnityEngine;
+
+namespace AntiqueShop.Items
+{
+    public interface IWeighable
+    {
+        float Weight { get; }
+    }
+
+    public interface IMeasurable
+    {
+        Vector2 Dimensions { get; }
+    }
+
+    public interface IMagnetic
+    {
+        bool IsMagnetic { get; }
+    }
+
+    public interface IInscribed
+    {
+        string Text { get; }
+    }
+
+    public interface IUVReactive
+    {
+        bool IsUVReactive { get; }
+        Sprite UVView { get; }
+    }
+}
