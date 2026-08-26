@@ -1,0 +1,13 @@
+using UnityEngine;
+
+namespace AntiqueShop.Items
+{
+    [CreateAssetMenu(fileName = "Rock", menuName = "Scriptable Objects/Rock")]
+    public class Rock : Item
+    {
+        [field: SerializeField] public float Weight { get; private set; }
+        [field: SerializeField] public bool IsMagnetic { get; private set; }
+        [field: SerializeField] public bool IsUVReactive { get; private set; }
+        [field: SerializeField] public Sprite UVRockSprite { get; private set; }
+    }
+}
