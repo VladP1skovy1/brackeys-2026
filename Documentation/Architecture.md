@@ -6,9 +6,7 @@
 
 `Item` is the base class for all objects offered by customers. It contains:
 
-- the owning `Customer`
 - a visual representation (`view`)
-- a `Claim`
 - the asking `price`
 - the item's ground-truth `authenticity` (maybe implemented as a method: `this.isAuthentic(claim)`)
 
@@ -24,11 +22,11 @@ Item types extend `Item` with properties that can be inspected:
 
 ### `Customer`
 
-`Customer` has `view` variable, basically connects Item and Claim.
+`Customer` has a `view` variable, basically it connects Item and Claim. Contains a list of pairs (`item`, `claim`)
 
 ### `Claim`
 
-`Claim` stores dictionary of the properties stated by the customer, such as weight,
+`Claim` stores a dictionary of the properties stated by the customer, such as weight,
 dimensions, and magnetic properties, together with the `asking_price`.
 It may differ from the item's actual properties.
 
@@ -59,4 +57,6 @@ customer's `Claim` to help determine whether the item is authentic.
 3. The player compares tool results with the claim.
 4. The player accepts or declines the offer.
 5. `GameManager` updates the player's money and starts the next offer.
+
+`GameManager` has a list of customers that is created in the init state.
 
