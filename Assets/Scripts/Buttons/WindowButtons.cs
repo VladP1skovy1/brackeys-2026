@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace AntiqueShop
+namespace AntiqueShop.Buttons
 {
     public class WindowButtons : MonoBehaviour
     {
