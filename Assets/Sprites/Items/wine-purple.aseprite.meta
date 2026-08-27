@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41883a2466fd21b4aaa5bb486d5e23ba
+guid: 7c56a24aa7e043148a3df81d2d365109
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -125,7 +125,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: wine1
+  - name: wine-purple
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -135,9 +135,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 13
-      height: 46
-    spriteID: 4d64cd582f50b7b48912667a49c43df7
+      width: 19
+      height: 71
+    spriteID: 82e8be4c4bb5cfd4a8c7b7d4a6ae82fb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,25 +151,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3645087226
+      value0: 4215013556
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: wine1
+    name: wine-purple
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: wine-1
+    - name: wine-purple
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 13
-        height: 46
-      spriteId: 4d64cd582f50b7b48912667a49c43df7
+        width: 19
+        height: 71
+      spriteId: 82e8be4c4bb5cfd4a8c7b7d4a6ae82fb
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -178,5 +178,5 @@ ScriptedImporter:
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
-  previousTextureSize: {x: 32, y: 64}
-  canvasSize: {x: 13, y: 46}
+  previousTextureSize: {x: 32, y: 128}
+  canvasSize: {x: 19, y: 71}
