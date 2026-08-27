@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace AntiqueShop
+namespace AntiqueShop.Utils
 {
     [System.Serializable]
     public class Claim
