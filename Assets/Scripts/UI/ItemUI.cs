@@ -12,7 +12,7 @@ namespace AntiqueShop.UI
             spriteRenderer.sprite = itemData.ItemSprite;
             gameObject.SetActive(true);
         }
-        
+
         public void HideItem()
         {
             gameObject.SetActive(false);

@@ -21,6 +21,7 @@ namespace AntiqueShop.Core
         [SerializeField] private TextMeshProUGUI balanceText;
         [SerializeField] private TextMeshProUGUI potentialProfitText;
         [SerializeField] private TextMeshProUGUI claimText; 
+        [SerializeField] private CurrentItem itemHolder;
         [SerializeField] private float typingDelay;
         
         [Header("End Game Panels")]
@@ -39,6 +40,7 @@ namespace AntiqueShop.Core
             _currentCustomerIndex = 0;
             _isProcessingRound = true;
             itemShell.HideItem();
+            itemHolder.Set(null);
             claimText.text = "";
             UpdateBalanceUI();
             StartCoroutine(LoadNextCustomerRoutine());
@@ -68,6 +70,7 @@ namespace AntiqueShop.Core
             customerShell.SetupCustomer(_currentCustomer.CustomerSprite);
             yield return StartCoroutine(customerShell.SlideInRoutine());
             itemShell.SetupItem(_currentCustomer.Item);
+            itemHolder.Set(_currentCustomer.Item);
             HandleProfitUI();
             string textToType = _currentCustomer.Item.CustomerClaim.CustomerText; 
             yield return StartCoroutine(TypeTextRoutine(textToType));
@@ -87,6 +90,7 @@ namespace AntiqueShop.Core
         private IEnumerator ProcessDecisionRoutine(bool isAccepted)
         {
             itemShell.HideItem();
+            itemHolder.Set(null);
             claimText.text = "";
             Item currentItem = _currentCustomer.Item;
             
