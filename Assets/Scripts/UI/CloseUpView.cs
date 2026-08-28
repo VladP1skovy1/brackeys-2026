@@ -1,16 +1,19 @@
+using AntiqueShop.Core;
 using AntiqueShop.Items;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace AntiqueShop.UI
 {
     public class CloseUpView : MonoBehaviour
     {
-        [SerializeField] private CurrentItem itemHolder;
-        [SerializeField] private SpriteRenderer view;
+        [SerializeField] private Image view;
 
-        private void OnEnable() => itemHolder.Changed += OnItemChanged;
+        private void Awake() => Hide();
 
-        private void OnDisable() => itemHolder.Changed -= OnItemChanged;
+        private void OnEnable() => GameManager.OnRoundChanged += OnItemChanged;
+
+        private void OnDisable() => GameManager.OnRoundChanged -= OnItemChanged;
 
         private void OnItemChanged(Item item) => Hide();
 

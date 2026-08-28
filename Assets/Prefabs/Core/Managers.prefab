@@ -44,10 +44,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665e1d5e29e2e534bb64abd681b03942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.GameManager
+  quota: 300
   customers:
   - <Item>k__BackingField: {fileID: 11400000, guid: 490fe99fc46be0e43b059b5961b6c22e, type: 2}
-    <CustomerSprite>k__BackingField: {fileID: 4495229636074438036, guid: 445bfac5da0c25c4187729b37d5c9371, type: 3}
+    <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: 47696e97aec6576499b8883e9d446c77, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: -6332975694285735149, guid: e09b65f73d94abe4280f2e27e7932ac2, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: 490fe99fc46be0e43b059b5961b6c22e, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: 0462a2811c064344791b9e163719f2ed, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: -6976732876338395862, guid: 6d50860ee8304f14897c1aad883c432f, type: 3}
   customerShell: {fileID: 0}
   itemShell: {fileID: 0}
   balanceText: {fileID: 0}
   potentialProfitText: {fileID: 0}
+  claimText: {fileID: 0}
+  typingDelay: 0.08
+  winPanel: {fileID: 0}
+  losePanel: {fileID: 0}
