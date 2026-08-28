@@ -3,9 +3,13 @@ using UnityEngine;
 
 namespace AntiqueShop.Tools
 {
-    [CreateAssetMenu(fileName = "Lamp", menuName = "Scriptable Objects/Tools/Lamp")]
     public class Lamp : Tool
     {
+        protected override void UseToolClick()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public override object Read(Item item)
             => item is IUVReactive reactive ? (object)reactive.IsUVReactive : null;
     }
