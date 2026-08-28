@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1282127667481607169}
   - component: {fileID: 5677887609405936616}
   - component: {fileID: 7819625897528774340}
+  - component: {fileID: 1871107387850650079}
+  - component: {fileID: 4342850622083444145}
   m_Layer: 0
   m_Name: Computer
   m_TagString: Untagged
@@ -116,6 +118,85 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1871107387850650079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028575715438842980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5264e87f5d7066e408afa85a457649fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.PC
+  <ToolSprite>k__BackingField: {fileID: 0}
+  articles: []
+--- !u!60 &4342850622083444145
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028575715438842980}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 89, y: 79}
+    newSize: {x: 89, y: 79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -33.949623, y: 78.82499}
+      - {x: -38.95105, y: 73.458206}
+      - {x: -39.074547, y: 53.35003}
+      - {x: -38.86843, y: 23.17186}
+      - {x: -44.88832, y: 17.358223}
+      - {x: -45.025047, y: 0}
+      - {x: -49.41243, y: -3.1864395}
+      - {x: -52.906372, y: -20.333103}
+      - {x: 33.027588, y: -20.112415}
+      - {x: 37.229523, y: -3.0969658}
+      - {x: 36.02446, y: -0.350029}
+      - {x: 43.274902, y: 5.6753044}
+      - {x: 42.25493, y: 22.84214}
+      - {x: 37.414505, y: 25.068249}
+      - {x: 44.623505, y: 32.422237}
+      - {x: 44.3127, y: 66.823166}
+      - {x: 36.274323, y: 70.57455}
+      - {x: 34.9243, y: 79.17501}
+  m_UseDelaunayMesh: 1
 --- !u!1 &7500019204609868892
 GameObject:
   m_ObjectHideFlags: 0

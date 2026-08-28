@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4732394975555651141}
   - component: {fileID: 1201996114948131858}
+  - component: {fileID: 3040668087685305627}
+  - component: {fileID: 9008793863141133389}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
@@ -92,3 +94,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &3040668087685305627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7692754892910326855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e01e18c5f4c54d8b9c2b22d5d4d5f7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Lamp
+  <ToolSprite>k__BackingField: {fileID: 0}
+--- !u!60 &9008793863141133389
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7692754892910326855}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 57, y: 94}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -3.5, y: 59}
+      - {x: -9.5, y: 61}
+      - {x: -17.799728, y: 69.94931}
+      - {x: -11.175095, y: 67.90221}
+      - {x: 23.180809, y: 74.06035}
+      - {x: 27.836159, y: 86.2414}
+      - {x: 28.5, y: 94}
+      - {x: 19.660835, y: 93.586}
+      - {x: 17.189774, y: 92.55162}
+      - {x: -7.5, y: 87.67232}
+      - {x: -16.567581, y: 83.46376}
+      - {x: -17.583084, y: 73.57764}
+      - {x: -23.434006, y: 71.39374}
+      - {x: -23.997559, y: 66.71498}
+      - {x: -16.591873, y: 61.16249}
+      - {x: -12.5, y: 55}
+      - {x: -12.695648, y: 19.21254}
+      - {x: -24.729431, y: 13.30191}
+      - {x: -27.159409, y: 10.855045}
+      - {x: -28.5, y: 5}
+      - {x: -25.1763, y: 2.6980896}
+      - {x: -20.355042, y: 0.8043518}
+      - {x: 5.8019104, y: 0.3574829}
+      - {x: 14.419907, y: 5.972992}
+      - {x: 11.422623, y: 11.75856}
+      - {x: 6.193199, y: 16.60382}
+      - {x: -3.5, y: 20}
+  m_UseDelaunayMesh: 1
