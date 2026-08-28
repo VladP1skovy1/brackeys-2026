@@ -19,7 +19,7 @@ namespace AntiqueShop.Tools
 
         protected abstract void OnToolClick();
         
-        private void UpdateItem(Item item)
+        protected virtual void UpdateItem(Item item)
         {
             CurrentItem = item;
         }
