@@ -6,9 +6,13 @@ namespace AntiqueShop.UI
     public class ItemUI : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer spriteRenderer;
+
         public bool IsActive { get; private set; }
+
         private Sprite _defaultSprite;
-        
+        private Vector3 _homePosition;
+
+        private void Awake() => _homePosition = transform.position;
 
         public void SetupItem(Item itemData)
         {
@@ -16,6 +20,7 @@ namespace AntiqueShop.UI
             spriteRenderer.sprite = _defaultSprite;
             IsActive = true;
             gameObject.SetActive(true);
+            transform.position = _homePosition;
         }
 
         public void HideItem()
