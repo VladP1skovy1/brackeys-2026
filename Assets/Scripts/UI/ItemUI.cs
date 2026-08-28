@@ -23,21 +23,16 @@ namespace AntiqueShop.UI
             transform.position = _homePosition;
         }
 
+        public void ChangeSprite(Sprite newSprite)
+        {
+            spriteRenderer.sprite = newSprite;
+        }
+
         public void HideItem()
         {
             IsActive = false;
             gameObject.SetActive(false);
         }
-
-        public void Toggle(Sprite sprite)
-        {
-            if (sprite == null || spriteRenderer.sprite == sprite)
-            {
-                spriteRenderer.sprite = _defaultSprite;
-                return;
-            }
-
-            spriteRenderer.sprite = sprite;
-        }
+        
     }
 }
