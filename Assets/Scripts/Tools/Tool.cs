@@ -12,11 +12,11 @@ namespace AntiqueShop.Tools
         {
             if (eventData.button == PointerEventData.InputButton.Left)
             {
-                UseToolClick();
+                OnToolClick();
             }
         }
         
-        protected abstract void UseToolClick();
+        protected abstract void OnToolClick();
 
         public abstract object Read(Item item);
     }

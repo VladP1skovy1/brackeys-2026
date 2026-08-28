@@ -17,7 +17,7 @@ namespace AntiqueShop.Tools
 
         public Article[] Articles => articles;
 
-        protected override void UseToolClick()
+        protected override void OnToolClick()
         {
             throw new NotImplementedException();
         }

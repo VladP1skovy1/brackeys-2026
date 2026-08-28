@@ -5,7 +5,7 @@ namespace AntiqueShop.Tools
 {
     public class Lamp : Tool
     {
-        protected override void UseToolClick()
+        protected override void OnToolClick()
         {
             throw new System.NotImplementedException();
         }

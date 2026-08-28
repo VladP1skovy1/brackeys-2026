@@ -5,7 +5,7 @@ namespace AntiqueShop.Tools
 {
     public class Scales : Tool
     {
-        protected override void UseToolClick()
+        protected override void OnToolClick()
         {
             throw new System.NotImplementedException();
         }
