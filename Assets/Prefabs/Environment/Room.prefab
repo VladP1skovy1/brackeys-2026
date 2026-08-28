@@ -763,6 +763,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7769432584056441993, guid: d04890bf95af5ee4c91b0d3ec87b4c8b, type: 3}
   m_PrefabInstance: {fileID: 4669346462316289241}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9003009436072748485 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4340841942906435868, guid: d04890bf95af5ee4c91b0d3ec87b4c8b, type: 3}
+  m_PrefabInstance: {fileID: 4669346462316289241}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fecdeddf53bfc1458cc1775a2490b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.ItemUI
 --- !u!1001 &4986048692277707983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -882,9 +893,19 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6d15fd1155c215468ea3070258aaa55, type: 3}
+--- !u!4 &1020764512343536937 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7578194538334179743, guid: a6d15fd1155c215468ea3070258aaa55, type: 3}
+  m_PrefabInstance: {fileID: 7422314963957015734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1854155889456842488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9131634109590757966, guid: a6d15fd1155c215468ea3070258aaa55, type: 3}
+  m_PrefabInstance: {fileID: 7422314963957015734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5847934592239171631 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3902744720821656729, guid: a6d15fd1155c215468ea3070258aaa55, type: 3}
   m_PrefabInstance: {fileID: 7422314963957015734}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8456618581660965805
@@ -946,6 +967,22 @@ PrefabInstance:
     - target: {fileID: 4739509419526689964, guid: b197e5383f0b6b1468ba562b0bedae0c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291783615875880082, guid: b197e5383f0b6b1468ba562b0bedae0c, type: 3}
+      propertyPath: itemUI
+      value: 
+      objectReference: {fileID: 9003009436072748485}
+    - target: {fileID: 7291783615875880082, guid: b197e5383f0b6b1468ba562b0bedae0c, type: 3}
+      propertyPath: inspectPoint
+      value: 
+      objectReference: {fileID: 1020764512343536937}
+    - target: {fileID: 7291783615875880082, guid: b197e5383f0b6b1468ba562b0bedae0c, type: 3}
+      propertyPath: itemInspectPoint
+      value: 
+      objectReference: {fileID: 5847934592239171631}
+    - target: {fileID: 7291783615875880082, guid: b197e5383f0b6b1468ba562b0bedae0c, type: 3}
+      propertyPath: attachedWaitDuration
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8828068121145735349, guid: b197e5383f0b6b1468ba562b0bedae0c, type: 3}
       propertyPath: m_Name
