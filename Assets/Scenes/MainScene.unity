@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &6358653 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5622501106579203383, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+  m_PrefabInstance: {fileID: 30737842}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &30737842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -254,17 +265,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
---- !u!114 &33195363 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6150576032419043030, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
-  m_PrefabInstance: {fileID: 30737842}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &90543515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3143413194762043925, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
@@ -432,17 +432,6 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
---- !u!114 &537739887 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5622501106579203383, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
-  m_PrefabInstance: {fileID: 30737842}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &606648197 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4744401692396924487, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
@@ -553,17 +542,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &658493157 stripped
+--- !u!114 &1062596147 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3488266548690153283, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6150576032419043030, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
   m_PrefabInstance: {fileID: 30737842}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &1146179959 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 763834419830048382, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
@@ -580,6 +569,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1343137215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3488266548690153283, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+  m_PrefabInstance: {fileID: 30737842}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &1542496284
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,11 +788,11 @@ PrefabInstance:
     - target: {fileID: 3441332005934716677, guid: 6049db059052b5548a00ec8396a4c598, type: 3}
       propertyPath: passButton
       value: 
-      objectReference: {fileID: 658493157}
+      objectReference: {fileID: 1343137215}
     - target: {fileID: 3441332005934716677, guid: 6049db059052b5548a00ec8396a4c598, type: 3}
       propertyPath: acceptButton
       value: 
-      objectReference: {fileID: 537739887}
+      objectReference: {fileID: 6358653}
     - target: {fileID: 4462792645985500405, guid: 6049db059052b5548a00ec8396a4c598, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -897,7 +897,7 @@ PrefabInstance:
     - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
       propertyPath: claimText
       value: 
-      objectReference: {fileID: 33195363}
+      objectReference: {fileID: 1062596147}
     - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
       propertyPath: itemShell
       value: 
