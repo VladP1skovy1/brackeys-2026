@@ -37,7 +37,7 @@ namespace AntiqueShop.Core
         { 
             _currentBalance = 0f;
             _currentCustomerIndex = 0;
-            _isProcessingRound = false;
+            _isProcessingRound = true;
             itemShell.HideItem();
             claimText.text = "";
             UpdateBalanceUI();
