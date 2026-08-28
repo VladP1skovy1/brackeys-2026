@@ -106,7 +106,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca78c2aa6ec49e3ba3a7af5b5bc4a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Magnet
-  <ToolSprite>k__BackingField: {fileID: 0}
+  idleSprite: {fileID: 5472055364305110170, guid: 26527a8c601dc3b4bb9898c56864555e, type: 3}
+  activeSprite: {fileID: 8721745523897400067, guid: 317aa8cb6a8c80f4d979a90849fa92fa, type: 3}
+  inspectPoint: {fileID: 0}
+  itemInspectPoint: {fileID: 0}
+  pullDuration: 0.5
+  waitBeforePullDuration: 0.5
+  attachedWaitDuration: 2
+  failWaitDuration: 0.5
+  pullCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  itemUI: {fileID: 0}
 --- !u!60 &8681197096291388995
 PolygonCollider2D:
   m_ObjectHideFlags: 0

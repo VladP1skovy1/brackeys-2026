@@ -20,8 +20,5 @@ namespace AntiqueShop.Tools
             bool onScales = itemView.TogglePosition(pan.position);
             readout.Show(onScales ? $"{weight:0.##} g" : null);
         }
-
-        public override object Read()
-            => CurrentItem is IWeighable weighable ? (object)weighable.Weight : null;
     }
 }

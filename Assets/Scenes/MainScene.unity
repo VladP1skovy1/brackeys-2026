@@ -904,10 +904,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: quota
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
       propertyPath: winPanel
       value: 
       objectReference: {fileID: 90543515}
@@ -928,14 +924,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1296153141}
     - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: typingDelay
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: typingSpeed
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
       propertyPath: customerShell
       value: 
       objectReference: {fileID: 8501833215294222039}
@@ -943,30 +931,6 @@ PrefabInstance:
       propertyPath: potentialProfitText
       value: 
       objectReference: {fileID: 2134490628}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: customers.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: customers.Array.data[1].<Item>k__BackingField
-      value: 
-      objectReference: {fileID: 11400000, guid: 47696e97aec6576499b8883e9d446c77, type: 2}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: customers.Array.data[2].<Item>k__BackingField
-      value: 
-      objectReference: {fileID: 11400000, guid: 490fe99fc46be0e43b059b5961b6c22e, type: 2}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: customers.Array.data[0].<CustomerSprite>k__BackingField
-      value: 
-      objectReference: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: customers.Array.data[1].<CustomerSprite>k__BackingField
-      value: 
-      objectReference: {fileID: -6332975694285735149, guid: e09b65f73d94abe4280f2e27e7932ac2, type: 3}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: customers.Array.data[2].<CustomerSprite>k__BackingField
-      value: 
-      objectReference: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
     - target: {fileID: 5178958837833188574, guid: e799d5c8294f803439e856558c898859, type: 3}
       propertyPath: m_Name
       value: Managers

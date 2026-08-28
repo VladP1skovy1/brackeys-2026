@@ -18,8 +18,6 @@ namespace AntiqueShop.Tools
         }
 
         protected abstract void OnToolClick();
-
-        public abstract object Read();
         
         private void UpdateItem(Item item)
         {
