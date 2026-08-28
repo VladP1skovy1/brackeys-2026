@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d06122b9f52f644a2b7fead103bbbf, type: 3}
+  m_Name: Fluorite
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Rock
+  <ItemSprite>k__BackingField: {fileID: 0}
+  <RealPrice>k__BackingField: 0
+  <CustomerClaim>k__BackingField:
+    <CustomerText>k__BackingField: 
+    <AskingPrice>k__BackingField: 0
+  <IsAuthentic>k__BackingField: 0
+  <Weight>k__BackingField: 0
+  <IsMagnetic>k__BackingField: 0
+  <Dimensions>k__BackingField: {x: 0, y: 0}
+  <IsUVReactive>k__BackingField: 0
+  <UVRockSprite>k__BackingField: {fileID: 0}

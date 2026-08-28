@@ -106,7 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdb72ac86db47f3bb9a1e9dd5ef7d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Scales
-  <ToolSprite>k__BackingField: {fileID: 0}
+  itemView: {fileID: 0}
+  readout: {fileID: 0}
+  pan: {fileID: 0}
 --- !u!60 &7674538815433593940
 PolygonCollider2D:
   m_ObjectHideFlags: 0

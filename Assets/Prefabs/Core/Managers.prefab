@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.GameManager
   quota: 300
   customers:
+  - <Item>k__BackingField: {fileID: 11400000, guid: fc77f862350e1674191a9b729ea2d753, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: 490fe99fc46be0e43b059b5961b6c22e, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: 47696e97aec6576499b8883e9d446c77, type: 2}
