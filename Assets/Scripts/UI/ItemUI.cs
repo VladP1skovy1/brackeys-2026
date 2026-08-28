@@ -1,7 +1,7 @@
 using AntiqueShop.Items;
 using UnityEngine;
 
-namespace AntiqueShop
+namespace AntiqueShop.UI
 {
     public class ItemUI : MonoBehaviour
     {
