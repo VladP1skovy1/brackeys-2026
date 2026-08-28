@@ -7,8 +7,5 @@ namespace AntiqueShop.Tools
         protected override void OnToolClick()
         {
         }
-
-        public override object Read()
-            => CurrentItem is IWeighable weighable ? (object)weighable.Weight : null;
     }
 }

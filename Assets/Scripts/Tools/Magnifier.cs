@@ -8,9 +8,6 @@ namespace AntiqueShop.Tools
     {
         [SerializeField] private CloseUpView closeUp;
 
-        protected override void OnToolClick() => closeUp.Toggle(Read() as Sprite);
-
-        public override object Read()
-            => CurrentItem is IInscribed inscribed ? inscribed.CloseUp : null;
+        protected override void OnToolClick(){}
     }
 }

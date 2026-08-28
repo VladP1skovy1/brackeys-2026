@@ -8,9 +8,6 @@ namespace AntiqueShop.Tools
     {
         [SerializeField] private ItemUI itemView;
 
-        protected override void OnToolClick() => itemView.Toggle(Read() as Sprite);
-
-        public override object Read()
-            => CurrentItem is IUVReactive reactive && reactive.IsUVReactive ? reactive.UVView : null;
+        protected override void OnToolClick(){}
     }
 }
