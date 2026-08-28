@@ -1,3 +1,4 @@
+using AntiqueShop.Core;
 using AntiqueShop.Items;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -6,19 +7,7 @@ namespace AntiqueShop.Tools
 {
     public abstract class Tool : MonoBehaviour, IPointerClickHandler
     {
-        [SerializeField] private CurrentItem itemHolder;
-
         protected Item CurrentItem { get; private set; }
-
-        private void OnEnable()
-        {
-            CurrentItem = itemHolder.Value;
-            itemHolder.Changed += OnItemChanged;
-        }
-
-        private void OnDisable() => itemHolder.Changed -= OnItemChanged;
-
-        private void OnItemChanged(Item item) => CurrentItem = item;
 
         public void OnPointerClick(PointerEventData eventData)
         {
@@ -31,5 +20,20 @@ namespace AntiqueShop.Tools
         protected abstract void OnToolClick();
 
         public abstract object Read();
+        
+        private void UpdateItem(Item item)
+        {
+            CurrentItem = item;
+        }
+        
+        private void OnEnable()
+        {
+            GameManager.OnRoundChanged += UpdateItem;
+        }
+        
+        private void OnDisable()
+        {
+            GameManager.OnRoundChanged -= UpdateItem;
+        }
     }
 }
