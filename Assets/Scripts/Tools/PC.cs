@@ -19,23 +19,5 @@ namespace AntiqueShop.Tools
         protected override void OnToolClick()
         {
         }
-
-        public override object Read()
-        {
-            if (CurrentItem == null)
-            {
-                return null;
-            }
-
-            foreach (Article article in articles)
-            {
-                if (article.ItemType == CurrentItem.Type)
-                {
-                    return article.Text;
-                }
-            }
-
-            return null;
-        }
     }
 }

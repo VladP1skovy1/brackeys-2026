@@ -7,8 +7,5 @@ namespace AntiqueShop.Tools
         protected override void OnToolClick()
         {
         }
-
-        public override object Read()
-            => CurrentItem is IMeasurable measurable ? (object)measurable.Dimensions : null;
     }
 }
