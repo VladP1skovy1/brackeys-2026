@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ff66b31cc88844082eeb508fd6bf8d, type: 3}
+  m_Name: TreasuryBond
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Document
+  <ItemSprite>k__BackingField: {fileID: 0}
+  <RealPrice>k__BackingField: 0
+  <CustomerClaim>k__BackingField:
+    <CustomerText>k__BackingField: 
+    <AskingPrice>k__BackingField: 0
+  <IsAuthentic>k__BackingField: 0
+  <DocumentText>k__BackingField: 
+  <DocumentSprite>k__BackingField: {fileID: 0}
+  <IsUVReactive>k__BackingField: 0
+  <UVDocumentSprite>k__BackingField: {fileID: 0}
