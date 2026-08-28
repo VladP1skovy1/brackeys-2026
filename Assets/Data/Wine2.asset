@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cec964b55f47ceb4985f757e4d5937f1, type: 3}
   m_Name: Wine2
   m_EditorClassIdentifier: Assembly-CSharp::Alcohol
-  <ItemSprite>k__BackingField: {fileID: -5140061693559414680, guid: cec18b91f5933874db8443866721cbb3, type: 3}
+  <ItemSprite>k__BackingField: {fileID: 2621306172154703639, guid: fc99c1361f8ef794cabebfaaf74bc993, type: 3}
   <RealPrice>k__BackingField: 1000
   <CustomerClaim>k__BackingField:
-    <CustomerText>k__BackingField: 
+    <CustomerText>k__BackingField: Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Mauris aliquet varius dapibus. Donec ipsum neque, blandit ut commodo
+      quis, finibus at tellus. Sed iaculis nisi lacus, non consectetur quam lobortis
+      quis.
     <AskingPrice>k__BackingField: 200
   <IsAuthentic>k__BackingField: 0
   <AlcoholText>k__BackingField: Madrid Wine 2007
