@@ -3,9 +3,13 @@ using UnityEngine;
 
 namespace AntiqueShop.Tools
 {
-    [CreateAssetMenu(fileName = "Scales", menuName = "Scriptable Objects/Tools/Scales")]
     public class Scales : Tool
     {
+        protected override void UseToolClick()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public override object Read(Item item)
             => item is IWeighable weighable ? (object)weighable.Weight : null;
     }

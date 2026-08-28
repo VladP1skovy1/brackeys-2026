@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace AntiqueShop.Tools
 {
-    [CreateAssetMenu(fileName = "PC", menuName = "Scriptable Objects/Tools/PC")]
     public class PC : Tool
     {
         [Serializable]
@@ -17,6 +16,11 @@ namespace AntiqueShop.Tools
         [SerializeField] private Article[] articles;
 
         public Article[] Articles => articles;
+
+        protected override void UseToolClick()
+        {
+            throw new NotImplementedException();
+        }
 
         public override object Read(Item item)
         {
