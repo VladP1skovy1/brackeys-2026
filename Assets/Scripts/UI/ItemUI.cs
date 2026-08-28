@@ -6,8 +6,13 @@ namespace AntiqueShop.UI
     public class ItemUI : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer spriteRenderer;
+
         public bool IsActive { get; private set; }
+
         private Sprite _defaultSprite;
+        private Vector3 _homePosition;
+
+        private void Awake() => _homePosition = transform.position;
 
         public void SetupItem(Item itemData)
         {
@@ -33,13 +38,6 @@ namespace AntiqueShop.UI
             }
 
             spriteRenderer.sprite = sprite;
-        }
-
-        public bool TogglePosition(Vector3 position)
-        {
-            bool moving = transform.position != position;
-            transform.position = moving ? position : _homePosition;
-            return moving;
         }
     }
 }

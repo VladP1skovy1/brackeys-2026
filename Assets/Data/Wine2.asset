@@ -22,3 +22,4 @@ MonoBehaviour:
     <AskingPrice>k__BackingField: 200
   <IsAuthentic>k__BackingField: 0
   <AlcoholText>k__BackingField: Madrid Wine 2007
+  <LabelSprite>k__BackingField: {fileID: -3970517755019837818, guid: ef91d10c01a6f6247b33a5320b9c8b60, type: 3}

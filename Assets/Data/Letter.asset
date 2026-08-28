@@ -19,6 +19,6 @@ MonoBehaviour:
     <AskingPrice>k__BackingField: 0
   <IsAuthentic>k__BackingField: 0
   <DocumentText>k__BackingField: 
-  <DocumentSprite>k__BackingField: {fileID: 0}
+  <DocumentSprite>k__BackingField: {fileID: 8548882485145911593, guid: 6065e44b64c2af74f978ae6918698579, type: 3}
   <IsUVReactive>k__BackingField: 0
   <UVDocumentSprite>k__BackingField: {fileID: 0}

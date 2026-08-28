@@ -106,9 +106,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdb72ac86db47f3bb9a1e9dd5ef7d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Scales
-  itemView: {fileID: 0}
+  itemInspectPoint: {fileID: 0}
+  waitBeforeLiftDuration: 0
+  liftDuration: 0
+  weighedWaitDuration: 0
+  liftCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  itemUI: {fileID: 0}
   readout: {fileID: 0}
-  pan: {fileID: 0}
+  noWeightText: 750 g
 --- !u!60 &7674538815433593940
 PolygonCollider2D:
   m_ObjectHideFlags: 0

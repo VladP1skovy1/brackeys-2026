@@ -20,3 +20,4 @@ MonoBehaviour:
     <AskingPrice>k__BackingField: 100
   <IsAuthentic>k__BackingField: 1
   <AlcoholText>k__BackingField: Porto Wine 1972
+  <LabelSprite>k__BackingField: {fileID: -7543883135066665612, guid: 810017b03a90fa14cb329608afaed7ff, type: 3}
