@@ -19,7 +19,7 @@ namespace AntiqueShop.Items
 
     public interface IInscribed
     {
-        string Text { get; }
+        Sprite CloseUp { get; }
     }
 
     public interface IUVReactive

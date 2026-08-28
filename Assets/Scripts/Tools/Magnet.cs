@@ -1,5 +1,4 @@
 using AntiqueShop.Items;
-using UnityEngine;
 
 namespace AntiqueShop.Tools
 {
@@ -7,10 +6,9 @@ namespace AntiqueShop.Tools
     {
         protected override void OnToolClick()
         {
-            throw new System.NotImplementedException();
         }
 
-        public override object Read(Item item)
-            => item is IMagnetic magnetic ? (object)magnetic.IsMagnetic : null;
+        public override object Read()
+            => CurrentItem is IMagnetic magnetic ? (object)magnetic.IsMagnetic : null;
     }
 }

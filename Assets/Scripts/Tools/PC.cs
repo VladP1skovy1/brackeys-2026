@@ -1,5 +1,4 @@
 using System;
-using AntiqueShop.Items;
 using UnityEngine;
 
 namespace AntiqueShop.Tools
@@ -19,14 +18,18 @@ namespace AntiqueShop.Tools
 
         protected override void OnToolClick()
         {
-            throw new NotImplementedException();
         }
 
-        public override object Read(Item item)
+        public override object Read()
         {
+            if (CurrentItem == null)
+            {
+                return null;
+            }
+
             foreach (Article article in articles)
             {
-                if (article.ItemType == item.Type)
+                if (article.ItemType == CurrentItem.Type)
                 {
                     return article.Text;
                 }
