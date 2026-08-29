@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741a5232007b1d74bb4277301f10645c, type: 3}
+  m_Name: TrophyFake
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Statuette
+  <ItemSprite>k__BackingField: {fileID: -8616499975114970166, guid: 2449ca84eb8ee234b8262205c08adcc0, type: 3}
+  <RealPrice>k__BackingField: 0
+  <CustomerClaim>k__BackingField:
+    <CustomerText>k__BackingField: Bronze, this one. Belonged to a collector who
+      owed me money. Weighs 2 kilos, doesn't it? Give me $700 and take it.
+    <AskingPrice>k__BackingField: 700
+  <IsAuthentic>k__BackingField: 0
+  <Weight>k__BackingField: 250
+  <IsMagnetic>k__BackingField: 0
+  <Dimensions>k__BackingField: {x: 0, y: 0}
+  <IsUVReactive>k__BackingField: 0
+  <UVStatuetteSprite>k__BackingField: {fileID: 0}
+  <LightShape>k__BackingField: 0
+  <GlowColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}

@@ -44,23 +44,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665e1d5e29e2e534bb64abd681b03942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.GameManager
-  quota: 300
+  quota: 2000
   customers:
   - <Item>k__BackingField: {fileID: 11400000, guid: 490fe99fc46be0e43b059b5961b6c22e, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: -2836634721577055391, guid: e02df1d5f32b5674e8b6657d32942230, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: 47696e97aec6576499b8883e9d446c77, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: 598601c99696d1942a77d0efbc6348fe, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: 1856626367842341375, guid: 6d50860ee8304f14897c1aad883c432f, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: 64ccb8d78529b7648b297eac6342676f, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: -2836634721577055391, guid: e02df1d5f32b5674e8b6657d32942230, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: 0462a2811c064344791b9e163719f2ed, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: cd92dfc3c23042f40a7086006869e713, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: 1856626367842341375, guid: 6d50860ee8304f14897c1aad883c432f, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: d47894e2c9ec4c548910e4f380c72588, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: -2836634721577055391, guid: e02df1d5f32b5674e8b6657d32942230, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: 9f12dd6f01485e54f927985375872ead, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: fc77f862350e1674191a9b729ea2d753, type: 2}
-    <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
-  - <Item>k__BackingField: {fileID: 11400000, guid: d47894e2c9ec4c548910e4f380c72588, type: 2}
     <CustomerSprite>k__BackingField: {fileID: 1856626367842341375, guid: 6d50860ee8304f14897c1aad883c432f, type: 3}
-  - <Item>k__BackingField: {fileID: 11400000, guid: 47696e97aec6576499b8883e9d446c77, type: 2}
-    <CustomerSprite>k__BackingField: {fileID: -6332975694285735149, guid: e09b65f73d94abe4280f2e27e7932ac2, type: 3}
+  - <Item>k__BackingField: {fileID: 11400000, guid: f058d6461566fdd4a967ba4b80a19184, type: 2}
+    <CustomerSprite>k__BackingField: {fileID: -2836634721577055391, guid: e02df1d5f32b5674e8b6657d32942230, type: 3}
   customerShell: {fileID: 0}
   itemShell: {fileID: 0}
   balanceText: {fileID: 0}
   potentialProfitText: {fileID: 0}
   claimText: {fileID: 0}
-  typingDelay: 0.08
+  typingDelay: 0.06
   winPanel: {fileID: 0}
   losePanel: {fileID: 0}

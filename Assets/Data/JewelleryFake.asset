@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00766dbde323c54bb48fe94b61cf826, type: 3}
+  m_Name: JewelleryFake
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Jewellery
+  <ItemSprite>k__BackingField: {fileID: 3661660947610842243, guid: 8c593c9569ab0d946a75034e40384ede, type: 3}
+  <RealPrice>k__BackingField: 0
+  <CustomerClaim>k__BackingField:
+    <CustomerText>k__BackingField: Pure pearls, that. Never been off my neck till
+      today. You can check yourself. I'd like $900 for this art.
+    <AskingPrice>k__BackingField: 900
+  <IsAuthentic>k__BackingField: 0
+  <Weight>k__BackingField: 90
+  <IsMagnetic>k__BackingField: 1
