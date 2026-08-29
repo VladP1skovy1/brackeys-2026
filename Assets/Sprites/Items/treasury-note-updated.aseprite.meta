@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e02df1d5f32b5674e8b6657d32942230
+guid: 675bbb0a00db19147a740a160f3ce6a7
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,7 +101,7 @@ ScriptedImporter:
     addShadowCasters: 0
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
-  platformSettingsDirtyTick: 639236202952641249
+  platformSettingsDirtyTick: 639236203333098379
   singleSpriteImportData:
   - name: 
     originalName: 
@@ -125,7 +125,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: gentleman-updated
+  - name: treasury-note-updated
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -135,9 +135,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 83
-      height: 83
-    spriteID: 7034b18eb5d1e304e9342e8f7a9f6c61
+      width: 47
+      height: 18
+    spriteID: b3bc5579fd696c34bb523c88e60f6bcf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,25 +151,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3724681039
+      value0: 430446960
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: gentleman-updated
+    name: treasury-note-updated
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: gentleman-updated
+    - name: treasury-note-updated
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 83
-        height: 83
-      spriteId: 7034b18eb5d1e304e9342e8f7a9f6c61
+        width: 47
+        height: 18
+      spriteId: b3bc5579fd696c34bb523c88e60f6bcf
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -214,5 +214,5 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
-  previousTextureSize: {x: 128, y: 128}
-  canvasSize: {x: 83, y: 83}
+  previousTextureSize: {x: 64, y: 32}
+  canvasSize: {x: 47, y: 18}

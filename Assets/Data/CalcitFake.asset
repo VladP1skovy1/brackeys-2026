@@ -10,16 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01d06122b9f52f644a2b7fead103bbbf, type: 3}
-  m_Name: Calcit
+  m_Name: CalcitFake
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Rock
   <ItemSprite>k__BackingField: {fileID: -7427656615552843321, guid: dc5beab80fae61447b516b1164e92e9b, type: 3}
   <RealPrice>k__BackingField: 200
   <CustomerClaim>k__BackingField:
-    <CustomerText>k__BackingField: FUCKING ROCK
-    <AskingPrice>k__BackingField: 100
-  <IsAuthentic>k__BackingField: 1
-  <Weight>k__BackingField: 10
+    <CustomerText>k__BackingField: Calcite, my grandfather's. Heavy as a brick. $600
+      for it.
+    <AskingPrice>k__BackingField: 600
+  <IsAuthentic>k__BackingField: 0
+  <Weight>k__BackingField: 3
   <IsMagnetic>k__BackingField: 1
   <Dimensions>k__BackingField: {x: 0, y: 0}
   <IsUVReactive>k__BackingField: 0
   <UVRockSprite>k__BackingField: {fileID: 0}
+  <LightShape>k__BackingField: 0
+  <GlowColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}

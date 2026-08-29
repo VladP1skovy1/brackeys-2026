@@ -4,7 +4,7 @@ namespace AntiqueShop.Tools
     {
         public const string AlcoholArticle =
             "WINE\n\n" +
-            "The label tells you most of it. The estate, the region and the year have to " +
+            "Standard bottle of wine weighs around 1.2 - 1.5 kg. The label tells you most of it. The estate, the region and the year have to " +
             "match each other; fakes usually get one of them wrong.\n" +
             "The one thing you can definitely say about prestigious wine - it is not magnetic...";
 
@@ -24,7 +24,7 @@ namespace AntiqueShop.Tools
             "DOCUMENTS\n\n" +
             "Real treasury paper has a watermark pressed into it. You only see it with special UV light. " +
             "Fakes printed on new paper show nothing. But not all documents have a watermark, as you might expect.\n" +
-            "Read the text as well. Bogus documents get dates, names or titles wrong.";
+            "Read the text as well. Bogus documents get dates, names or titles wrong. Sometimes it difficult to resolve issue date, but it is probably the one that is printed.";
 
         public const string JewelleryArticle =
             "JEWELLERY\n\n" +

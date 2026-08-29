@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Fluorite
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Rock
   <ItemSprite>k__BackingField: {fileID: -7427656615552843321, guid: dc5beab80fae61447b516b1164e92e9b, type: 3}
-  <RealPrice>k__BackingField: 700
+  <RealPrice>k__BackingField: 1100
   <CustomerClaim>k__BackingField:
-    <CustomerText>k__BackingField: 
-    <AskingPrice>k__BackingField: 0
-  <IsAuthentic>k__BackingField: 0
-  <Weight>k__BackingField: 700
+    <CustomerText>k__BackingField: Green fluorite, straight out of a mine. 200 grams
+      - giant!  I'm asking $500.
+    <AskingPrice>k__BackingField: 500
+  <IsAuthentic>k__BackingField: 1
+  <Weight>k__BackingField: 200
   <IsMagnetic>k__BackingField: 0
   <Dimensions>k__BackingField: {x: 0, y: 0}
   <IsUVReactive>k__BackingField: 1
