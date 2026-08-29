@@ -294,6 +294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScalesReadout
       objectReference: {fileID: 0}
+    - target: {fileID: 6017758371767076677, guid: b94b290bf3ffcb94b81ae507222efe2e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -606,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7839582029168789061, guid: 7991321da853cfd479cfabc6bfeadb90, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

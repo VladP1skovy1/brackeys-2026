@@ -19,16 +19,23 @@ namespace AntiqueShop.UI
 
         public void Toggle(Sprite sprite)
         {
-            if (sprite == null || (view.sprite == sprite && view.enabled))
+            if (sprite == null || (view.sprite == sprite && view.color.a > 0))
             {
                 Hide();
                 return;
             }
 
             view.sprite = sprite;
-            view.enabled = true;
+            Color c = view.color;
+            c.a = 1f;
+            view.color = c;
         }
 
-        public void Hide() => view.enabled = false;
+        private void Hide()
+        {
+            Color c = view.color;
+            c.a = 0f;
+            view.color = c;
+        }
     }
 }
