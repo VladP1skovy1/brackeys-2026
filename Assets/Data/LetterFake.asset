@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: LetterFake
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Document
   <ItemSprite>k__BackingField: {fileID: 8364824067661670753, guid: 0d75ddd797333f940a2a12b2d67964bb, type: 3}
-  <RealPrice>k__BackingField: 0
+  <RealPrice>k__BackingField: 1200
   <Weight>k__BackingField: 5
   <CustomerClaim>k__BackingField:
     <CustomerText>k__BackingField: A letter from the White House to Einstein, 1928.
-      My aunt worked at the university. I couldn't take less than $850.
+      Aunt worked at the university. I can't take less than $850.
     <AskingPrice>k__BackingField: 850
   <IsAuthentic>k__BackingField: 0
   <DocumentText>k__BackingField: 
