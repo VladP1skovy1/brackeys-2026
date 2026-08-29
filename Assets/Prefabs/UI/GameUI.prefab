@@ -134,7 +134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6194556562955793983, guid: 5c6a8845e4fce4849a7c6aa41a715be1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 65
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6194556562955793983, guid: 5c6a8845e4fce4849a7c6aa41a715be1, type: 3}
       propertyPath: m_SizeDelta.y
@@ -188,6 +188,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6682209613413515962, guid: 5c6a8845e4fce4849a7c6aa41a715be1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4254001377214287505, guid: 835032fa919879e498aebda3160aab0f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -991,7 +995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 683843092050536244, guid: 1905482f669a4fa499afa1c7641e0747, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 65
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 683843092050536244, guid: 1905482f669a4fa499afa1c7641e0747, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1069,6 +1073,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6156020343561219178, guid: 1905482f669a4fa499afa1c7641e0747, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4129047009829204517, guid: d8e397da655a3ad459e198e22d8dd491, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

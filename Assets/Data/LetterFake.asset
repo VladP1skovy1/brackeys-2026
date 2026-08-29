@@ -16,8 +16,8 @@ MonoBehaviour:
   <RealPrice>k__BackingField: 0
   <Weight>k__BackingField: 5
   <CustomerClaim>k__BackingField:
-    <CustomerText>k__BackingField: A letter from White House to Einstein, 1928. My
-      aunt worked at the university. I couldn't take less than $850.
+    <CustomerText>k__BackingField: A letter from the White House to Einstein, 1928.
+      My aunt worked at the university. I couldn't take less than $850.
     <AskingPrice>k__BackingField: 850
   <IsAuthentic>k__BackingField: 0
   <DocumentText>k__BackingField: 

@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Jewellery
   <ItemSprite>k__BackingField: {fileID: 4728426004402439824, guid: c5759c6f74deae449bb3dcbce83b8adb, type: 3}
   <RealPrice>k__BackingField: 1500
+  <Weight>k__BackingField: 18
   <CustomerClaim>k__BackingField:
     <CustomerText>k__BackingField: 90 carat gold, my mother's. I've had it valued
-      twice. I would sell it for $850
+      twice. I would sell it for $850.
     <AskingPrice>k__BackingField: 850
   <IsAuthentic>k__BackingField: 1
-  <Weight>k__BackingField: 18
   <IsMagnetic>k__BackingField: 0
