@@ -12,6 +12,8 @@ namespace AntiqueShop.UI
         [SerializeField] private Button[] buttons;
         
         [SerializeField] private Button closeButton;
+        
+        [SerializeField] private TMP_Text clockText;
 
         [SerializeField] private Color buttonColor;
         [SerializeField] private Color textColor;
@@ -21,6 +23,15 @@ namespace AntiqueShop.UI
         private void OnEnable()
         {
             OpenTab(0);
+            UpdateClock();
+        }
+
+        private void UpdateClock()
+        {
+            if (clockText != null)
+            {
+                clockText.text = System.DateTime.Now.ToString("HH:mm");
+            }
         }
 
         private void Start()

@@ -812,6 +812,7 @@ MonoBehaviour:
   - {fileID: 2927378780441013511}
   - {fileID: 7942244733225117683}
   closeButton: {fileID: 8716824695604195116}
+  clockText: {fileID: 3917434658859140782}
   buttonColor: {r: 0.08235294, g: 0.1137255, b: 0.15686275, a: 1}
   textColor: {r: 0.9215687, g: 0.9294118, b: 0.91372555, a: 1}
   activeButtonColor: {r: 0.9215687, g: 0.9294118, b: 0.91372555, a: 1}
@@ -1383,8 +1384,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4113377454259046790, guid: 1dc1814ec80556146932f9d7ff36cbab, type: 3}
   m_PrefabInstance: {fileID: 9054014728305295168}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5239694212050111323 stripped
-Transform:
+--- !u!224 &5239694212050111323 stripped
+RectTransform:
   m_CorrespondingSourceObject: {fileID: 3823961198494250011, guid: 1dc1814ec80556146932f9d7ff36cbab, type: 3}
   m_PrefabInstance: {fileID: 9054014728305295168}
   m_PrefabAsset: {fileID: 0}
