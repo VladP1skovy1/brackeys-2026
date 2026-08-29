@@ -23,3 +23,5 @@ MonoBehaviour:
   <Dimensions>k__BackingField: {x: 0, y: 0}
   <IsUVReactive>k__BackingField: 1
   <UVRockSprite>k__BackingField: {fileID: -996565850603210123, guid: 6215db38c5d7cf9478e3d6bee5c56373, type: 3}
+  <LightShape>k__BackingField: 0
+  <GlowColor>k__BackingField: {r: 0.5176471, g: 0, b: 1, a: 1}

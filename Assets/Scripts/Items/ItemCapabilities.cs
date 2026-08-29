@@ -1,3 +1,4 @@
+using AntiqueShop.Utils;
 using UnityEngine;
 
 namespace AntiqueShop.Items
@@ -26,5 +27,7 @@ namespace AntiqueShop.Items
     {
         bool IsUVReactive { get; }
         Sprite UVView { get; }
+        LightShapeType LightShape { get; }
+        Color GlowColor { get; }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AntiqueShop.Items;
 using AntiqueShop.UI;
+using AntiqueShop.Utils;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -67,13 +68,22 @@ namespace AntiqueShop.Tools
         private void UpdateItemVisuals()
         {
             Sprite spriteToShow = CurrentItem.ItemSprite;
+            bool isGlow = false;
             
             if (_isUvMode && CurrentItem is IUVReactive { IsUVReactive: true } uvReactiveItem)
             {
                 spriteToShow = uvReactiveItem.UVView;
+                LightShapeType shapeType = uvReactiveItem.LightShape;
+                Color glowColor = uvReactiveItem.GlowColor;
+                itemUI.TurnOnLight(shapeType, glowColor);
+                isGlow = true;
             }
             
             itemUI.ChangeSprite(spriteToShow);
+            if (!isGlow)
+            {
+                itemUI.TurnOffAllLights();
+            }
         }
     }
 }
