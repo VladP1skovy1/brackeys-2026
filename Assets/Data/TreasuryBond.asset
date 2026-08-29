@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Document
   <ItemSprite>k__BackingField: {fileID: -2268350919483411276, guid: 675bbb0a00db19147a740a160f3ce6a7, type: 3}
   <RealPrice>k__BackingField: 1400
+  <Weight>k__BackingField: 6
   <CustomerClaim>k__BackingField:
     <CustomerText>k__BackingField: Ten thousand dollar treasury bond, released in
       1979. It's got the watermark and everything. $750 and we're done.
