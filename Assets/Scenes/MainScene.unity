@@ -741,6 +741,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2a76756ab483cf468f7e21ccef2aa2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.UI.ToolReadout
+--- !u!114 &1729114877 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8355143526096418703, guid: 0165f02e3f7370646a9f87b289e9cef9, type: 3}
+  m_PrefabInstance: {fileID: 8501833215294222037}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.Light2D
 --- !u!114 &1784223614 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1752862205966739043, guid: 0165f02e3f7370646a9f87b289e9cef9, type: 3}
@@ -1011,6 +1022,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2680977092111899451, guid: 0165f02e3f7370646a9f87b289e9cef9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2804480483972598314, guid: 0165f02e3f7370646a9f87b289e9cef9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1203,6 +1218,10 @@ PrefabInstance:
       propertyPath: moveCurve.m_Curve.Array.data[1].outSlope
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9003009436072748485, guid: 0165f02e3f7370646a9f87b289e9cef9, type: 3}
+      propertyPath: lightPresets.Array.data[0].lightComponent
+      value: 
+      objectReference: {fileID: 1729114877}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
