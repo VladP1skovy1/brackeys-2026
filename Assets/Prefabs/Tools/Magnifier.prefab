@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6699263057485565590}
   - component: {fileID: 1509328902212088858}
+  - component: {fileID: 4232229855822287542}
+  - component: {fileID: 7646583806532379443}
   m_Layer: 0
   m_Name: Magnifier
   m_TagString: Untagged
@@ -92,3 +94,79 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &4232229855822287542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814655790868784490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0bd3d31c53740b8893ffc48d61da2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Magnifier
+  <ToolSprite>k__BackingField: {fileID: 0}
+--- !u!60 &7646583806532379443
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814655790868784490}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 38, y: 13}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -7.0022984, y: 12.897354}
+      - {x: -14.066837, y: 13.101746}
+      - {x: -18.898254, y: 9.066841}
+      - {x: -18.898254, y: 3.866333}
+      - {x: -13.800543, y: 0.0868988}
+      - {x: -7.1704254, y: -0.10560608}
+      - {x: -1.5974922, y: 4.7311707}
+      - {x: 19.10175, y: 4.899742}
+      - {x: 19, y: 8}
+      - {x: -1.7107277, y: 8.31971}
+    - - {x: -19.240929, y: 6.305519}
+      - {x: -15.315096, y: 0.6252594}
+      - {x: -7.0842896, y: 0.1815567}
+      - {x: -3.0159645, y: 5.694763}
+      - {x: -6.4809895, y: 0.6232681}
+      - {x: -14.1556015, y: 0.100250244}
+  m_UseDelaunayMesh: 1

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using AntiqueShop.Buttons;
@@ -31,6 +32,8 @@ namespace AntiqueShop.Core
         private int _currentCustomerIndex;
         private float _currentBalance;
         private bool _isProcessingRound;
+        
+        public static event Action<Item> OnRoundChanged; 
         
         
         void Start()
@@ -68,6 +71,7 @@ namespace AntiqueShop.Core
             customerShell.SetupCustomer(_currentCustomer.CustomerSprite);
             yield return StartCoroutine(customerShell.SlideInRoutine());
             itemShell.SetupItem(_currentCustomer.Item);
+            OnRoundChanged?.Invoke(_currentCustomer.Item);
             HandleProfitUI();
             string textToType = _currentCustomer.Item.CustomerClaim.CustomerText; 
             yield return StartCoroutine(TypeTextRoutine(textToType));

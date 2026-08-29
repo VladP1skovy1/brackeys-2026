@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d06122b9f52f644a2b7fead103bbbf, type: 3}
+  m_Name: Fluorite
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Rock
+  <ItemSprite>k__BackingField: {fileID: -7427656615552843321, guid: dc5beab80fae61447b516b1164e92e9b, type: 3}
+  <RealPrice>k__BackingField: 1100
+  <CustomerClaim>k__BackingField:
+    <CustomerText>k__BackingField: Green fluorite, straight out of a mine. 200 grams
+      - giant!  I'm asking $500.
+    <AskingPrice>k__BackingField: 500
+  <IsAuthentic>k__BackingField: 1
+  <Weight>k__BackingField: 200
+  <IsMagnetic>k__BackingField: 0
+  <Dimensions>k__BackingField: {x: 0, y: 0}
+  <IsUVReactive>k__BackingField: 1
+  <UVRockSprite>k__BackingField: {fileID: -996565850603210123, guid: 6215db38c5d7cf9478e3d6bee5c56373, type: 3}
+  <LightShape>k__BackingField: 0
+  <GlowColor>k__BackingField: {r: 0.5176471, g: 0, b: 1, a: 1}

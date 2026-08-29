@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741a5232007b1d74bb4277301f10645c, type: 3}
+  m_Name: Statuette
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Statuette
+  <ItemSprite>k__BackingField: {fileID: 6715190222090662919, guid: 12bf918225b85d841a299f058689eda0, type: 3}
+  <RealPrice>k__BackingField: 1500
+  <CustomerClaim>k__BackingField:
+    <CustomerText>k__BackingField: Solid bronze, cast in Florence. You can feel the
+      weight of it, no cheap filler inside. $900, and that's me being fair.
+    <AskingPrice>k__BackingField: 900
+  <IsAuthentic>k__BackingField: 1
+  <Weight>k__BackingField: 1700
+  <IsMagnetic>k__BackingField: 0
+  <Dimensions>k__BackingField: {x: 0, y: 0}
+  <IsUVReactive>k__BackingField: 0
+  <UVStatuetteSprite>k__BackingField: {fileID: 0}
+  <LightShape>k__BackingField: 0
+  <GlowColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}

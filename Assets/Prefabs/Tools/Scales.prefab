@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6082887195443481204}
   - component: {fileID: 7380071846579666508}
+  - component: {fileID: 4957647081815391356}
+  - component: {fileID: 7674538815433593940}
   m_Layer: 0
   m_Name: Scales
   m_TagString: Untagged
@@ -92,3 +94,95 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &4957647081815391356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6571944230772771750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bdb72ac86db47f3bb9a1e9dd5ef7d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Scales
+  itemInspectPoint: {fileID: 0}
+  waitBeforeLiftDuration: 0
+  liftDuration: 0
+  weighedWaitDuration: 0
+  liftCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  itemUI: {fileID: 0}
+  readout: {fileID: 0}
+  noWeightText: 750 g
+--- !u!60 &7674538815433593940
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6571944230772771750}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 37, y: 44}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -4.2844696, y: 44.068623}
+      - {x: -9.6853485, y: 41.168175}
+      - {x: -12.627594, y: 36.4021}
+      - {x: -13.215843, y: 25.166845}
+      - {x: -11.695297, y: 21.929352}
+      - {x: -16.867172, y: 16.482212}
+      - {x: -18.255486, y: 8.592602}
+      - {x: -18.59919, y: 3.2412567}
+      - {x: -17.168678, y: 1.8614426}
+      - {x: -15.5, y: 0}
+      - {x: 17.5, y: 0}
+      - {x: 18.5, y: 6}
+      - {x: 14.083244, y: 10.311066}
+      - {x: 12.487213, y: 14.514904}
+      - {x: 8.069641, y: 19.155632}
+      - {x: 7.758713, y: 23.40781}
+      - {x: 10.656418, y: 27.236027}
+      - {x: 10.431587, y: 33.00965}
+      - {x: 7.735443, y: 39.958607}
+      - {x: 2.353096, y: 44}
+  m_UseDelaunayMesh: 1

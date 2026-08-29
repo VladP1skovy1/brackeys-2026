@@ -6,7 +6,8 @@ namespace AntiqueShop.Items
     public class Alcohol : Item, IInscribed
     {
         [field: SerializeField] public string AlcoholText { get; private set; }
+        [field: SerializeField] public Sprite LabelSprite { get; private set; }
 
-        string IInscribed.Text => AlcoholText;
+        Sprite IInscribed.CloseUp => LabelSprite;
     }
 }

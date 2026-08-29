@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ff66b31cc88844082eeb508fd6bf8d, type: 3}
+  m_Name: LetterFake
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Items.Document
+  <ItemSprite>k__BackingField: {fileID: 8364824067661670753, guid: 0d75ddd797333f940a2a12b2d67964bb, type: 3}
+  <RealPrice>k__BackingField: 1200
+  <Weight>k__BackingField: 5
+  <CustomerClaim>k__BackingField:
+    <CustomerText>k__BackingField: A letter from the White House to Einstein, 1928.
+      Aunt worked at the university. I can't take less than $850.
+    <AskingPrice>k__BackingField: 850
+  <IsAuthentic>k__BackingField: 0
+  <DocumentText>k__BackingField: 
+  <DocumentSprite>k__BackingField: {fileID: 8548882485145911593, guid: 6065e44b64c2af74f978ae6918698579, type: 3}
+  <IsUVReactive>k__BackingField: 0
+  <UVDocumentSprite>k__BackingField: {fileID: 0}
+  <LightShape>k__BackingField: 0
+  <GlowColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}

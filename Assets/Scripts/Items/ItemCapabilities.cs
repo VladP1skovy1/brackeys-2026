@@ -1,3 +1,4 @@
+using AntiqueShop.Utils;
 using UnityEngine;
 
 namespace AntiqueShop.Items
@@ -19,12 +20,14 @@ namespace AntiqueShop.Items
 
     public interface IInscribed
     {
-        string Text { get; }
+        Sprite CloseUp { get; }
     }
 
     public interface IUVReactive
     {
         bool IsUVReactive { get; }
         Sprite UVView { get; }
+        LightShapeType LightShape { get; }
+        Color GlowColor { get; }
     }
 }

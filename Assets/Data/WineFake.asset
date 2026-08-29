@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cec964b55f47ceb4985f757e4d5937f1, type: 3}
-  m_Name: Wine2
+  m_Name: WineFake
   m_EditorClassIdentifier: Assembly-CSharp::Alcohol
   <ItemSprite>k__BackingField: {fileID: 2621306172154703639, guid: fc99c1361f8ef794cabebfaaf74bc993, type: 3}
-  <RealPrice>k__BackingField: 1000
+  <RealPrice>k__BackingField: 1700
+  <Weight>k__BackingField: 450
   <CustomerClaim>k__BackingField:
-    <CustomerText>k__BackingField: Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Mauris aliquet varius dapibus. Donec ipsum neque, blandit ut commodo
-      quis, finibus at tellus. Sed iaculis nisi lacus, non consectetur quam lobortis
-      quis.
-    <AskingPrice>k__BackingField: 200
+    <CustomerText>k__BackingField: Genuine Bordeaux, 1961. Best year the region ever
+      had. I wouldn't sell it if the rent weren't due. $750.
+    <AskingPrice>k__BackingField: 750
   <IsAuthentic>k__BackingField: 0
   <AlcoholText>k__BackingField: Madrid Wine 2007
+  <LabelSprite>k__BackingField: {fileID: -3970517755019837818, guid: ef91d10c01a6f6247b33a5320b9c8b60, type: 3}

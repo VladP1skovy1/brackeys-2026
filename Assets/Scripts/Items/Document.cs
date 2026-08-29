@@ -1,3 +1,4 @@
+using AntiqueShop.Utils;
 using UnityEngine;
 
 namespace AntiqueShop.Items
@@ -6,10 +7,16 @@ namespace AntiqueShop.Items
     public class Document : Item, IInscribed, IUVReactive
     {
         [field: SerializeField] public string DocumentText { get; private set; }
+        [field: SerializeField] public Sprite DocumentSprite { get; private set; }
         [field: SerializeField] public bool IsUVReactive { get; private set; }
         [field: SerializeField] public Sprite UVDocumentSprite { get; private set; }
+        [field: SerializeField] public LightShapeType LightShape { get; private set; }
+        [field: SerializeField] public Color GlowColor { get; private set; }
+        
 
-        string IInscribed.Text => DocumentText;
+        Sprite IInscribed.CloseUp => DocumentSprite;
         Sprite IUVReactive.UVView => UVDocumentSprite;
+        LightShapeType IUVReactive.LightShape => LightShape;
+        Color IUVReactive.GlowColor => GlowColor;
     }
 }

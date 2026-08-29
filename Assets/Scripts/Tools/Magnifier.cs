@@ -1,12 +1,19 @@
 using AntiqueShop.Items;
+using AntiqueShop.UI;
 using UnityEngine;
 
 namespace AntiqueShop.Tools
 {
-    [CreateAssetMenu(fileName = "Magnifier", menuName = "Scriptable Objects/Tools/Magnifier")]
     public class Magnifier : Tool
     {
-        public override object Read(Item item)
-            => item is IInscribed inscribed ? inscribed.Text : null;
+        [SerializeField] private CloseUpView closeUp;
+        [SerializeField] private ItemUI itemUI;
+
+        protected override void OnToolClick()
+        {
+            if (!itemUI.IsActive) return;
+
+            closeUp.Toggle(CurrentItem is IInscribed inscribed ? inscribed.CloseUp : null);
+        }
     }
 }
