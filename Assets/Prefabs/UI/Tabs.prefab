@@ -469,13 +469,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7039160760367902337, guid: 821f93444d8c5134292838c3b966c1ab, type: 3}
       propertyPath: m_text
-      value: 'Real treasury paper has a watermark pressed into it. You only see it
-        with special UV light. Fakes printed on new paper show nothing. But not all
-        documents have a watermark, as you might expect.
+      value: '
 
 
-        Read the text
-        as well. Bogus documents get dates, names or titles wrong. '
+        Real treasury paper has a watermark pressed into it. You
+        only see it with special UV light. Fakes printed on new paper show nothing.
+        But not all documents have a watermark, as you might expect.
+
+
+        Read
+        the text as well. Bogus documents get dates, names or titles wrong. Sometimes
+        it difficult to resolve issue date, but it is probably the one that is printed. '
       objectReference: {fileID: 0}
     - target: {fileID: 8399893647736749827, guid: 821f93444d8c5134292838c3b966c1ab, type: 3}
       propertyPath: m_SizeDelta.y
@@ -609,13 +613,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7039160760367902337, guid: 821f93444d8c5134292838c3b966c1ab, type: 3}
       propertyPath: m_text
-      value: 'Gold and silver are not magnetic, as well as other jewellery materials
-        such as pearls. If a magnet sticks, it is steel, whatever the hallmark says.
+      value: '
 
 
-        Also,
-        gold is very heavy for its size, and there are rumors that gold and silver
-        should not glow under UV light. '
+        Gold and silver are not magnetic, as well as other jewellery
+        materials such as pearls. If a magnet sticks, it is steel, whatever the hallmark
+        says.
+
+
+        Also, gold is very heavy for its size, and there are rumors
+        that gold and silver should not glow under UV light.
+
+
+        1 gram : 5
+        carat. '
       objectReference: {fileID: 0}
     - target: {fileID: 7039160760367902337, guid: 821f93444d8c5134292838c3b966c1ab, type: 3}
       propertyPath: m_margin.z
@@ -873,6 +884,19 @@ PrefabInstance:
     - target: {fileID: 4242516154191987134, guid: 821f93444d8c5134292838c3b966c1ab, type: 3}
       propertyPath: m_TextStyleHashCode
       value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039160760367902337, guid: 821f93444d8c5134292838c3b966c1ab, type: 3}
+      propertyPath: m_text
+      value: '
+
+
+        Standard bottle of wine weighs around 1.2 - 1.5 kg. The
+        label tells you most of it. The estate, the region and the year have to match
+        each other; fakes usually get one of them wrong.
+
+
+        The one thing
+        you can definitely say about prestigious wine - it is not magnetic...'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

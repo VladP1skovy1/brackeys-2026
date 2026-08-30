@@ -65,9 +65,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The label tells you most of it. The estate, the region and the year have
-    to match each other; fakes usually get one of them wrong.  \n\r\nThe one thing
-    you can definitely say about prestigious wine - it is not magnetic..."
+  m_text: 'Standard bottle of wine weighs around 1.2 - 1.5 kg. The label tells you
+    most of it. The estate, the region and the year have to match each other; fakes
+    usually get one of them wrong.
+
+    
+
+    The one thing you can definitely say
+    about prestigious wine - it is not magnetic...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 97b17709f078c814fac450e63a606091, type: 2}
   m_sharedMaterial: {fileID: -6670516479801687890, guid: 97b17709f078c814fac450e63a606091, type: 2}

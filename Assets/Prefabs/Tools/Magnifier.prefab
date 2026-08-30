@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1463491870534325383, guid: 47972f2bc7bd6144fbdfbf485d5e849a, type: 3}
+  m_Sprite: {fileID: -3683194653634819841, guid: adf2ac9b13183f140882ced8d1634071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,10 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0bd3d31c53740b8893ffc48d61da2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Magnifier
-  clickSound: {fileID: 8300000, guid: 5317a7d3f28b341429391a60084e2c87, type: 3}
-  clickVolume: 1
   closeUp: {fileID: 0}
   itemUI: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 5317a7d3f28b341429391a60084e2c87, type: 3}
+  clickVolume: 1
 --- !u!60 &7646583806532379443
 PolygonCollider2D:
   m_ObjectHideFlags: 0
