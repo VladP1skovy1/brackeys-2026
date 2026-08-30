@@ -613,13 +613,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7039160760367902337, guid: 821f93444d8c5134292838c3b966c1ab, type: 3}
       propertyPath: m_text
-      value: 'Gold and silver are not magnetic, as well as other jewellery materials
-        such as pearls. If a magnet sticks, it is steel, whatever the hallmark says.
+      value: '
 
 
-        Also,
-        gold is very heavy for its size, and there are rumors that gold and silver
-        should not glow under UV light. '
+        Gold and silver are not magnetic, as well as other jewellery
+        materials such as pearls. If a magnet sticks, it is steel, whatever the hallmark
+        says.
+
+
+        Also, gold is very heavy for its size, and there are rumors
+        that gold and silver should not glow under UV light.
+
+
+        1 gram : 5
+        carat. '
       objectReference: {fileID: 0}
     - target: {fileID: 7039160760367902337, guid: 821f93444d8c5134292838c3b966c1ab, type: 3}
       propertyPath: m_margin.z
