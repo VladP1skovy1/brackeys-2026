@@ -20,7 +20,7 @@ namespace AntiqueShop.Core
         public void PlaySoundFXClip(AudioClip clip, Transform spawnTransform, float volume)
         {
             if (!clip) return;
-            AudioSource audioSource = Instantiate(soundFXSource, spawnTransform.position, Quaternion.identity);
+            AudioSource audioSource = Instantiate(soundFXSource, spawnTransform.position, Quaternion.identity, transform);
             audioSource.clip = clip;
             audioSource.volume = volume;
             audioSource.Play();
