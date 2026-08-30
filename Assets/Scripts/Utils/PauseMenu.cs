@@ -1,3 +1,4 @@
+using AntiqueShop.Core;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,10 @@ namespace AntiqueShop.Utils
         [SerializeField] private Button openSettingsButton;
         [SerializeField] private Button closeSettingsButton;
         [SerializeField] private Button mainMenuButton;
+        
+        [Header("Audio")]
+        [SerializeField] private AudioClip clickSound;
+        [SerializeField] [Range(0f, 1f)] private float clickVolume;
 
         [Header("Volume Sliders")]
         [SerializeField] private Slider masterSlider;
@@ -28,17 +33,21 @@ namespace AntiqueShop.Utils
             if (settingsPanel != null) settingsPanel.SetActive(false);
 
             if (resumeButton != null)
-                resumeButton.onClick.AddListener(Resume);
+                resumeButton.onClick.AddListener(() => { PlaySoundFX(); Resume(); });
 
             if (openSettingsButton != null)
-                openSettingsButton.onClick.AddListener(OpenSettings);
+                openSettingsButton.onClick.AddListener(() => { PlaySoundFX(); OpenSettings(); });
 
             if (closeSettingsButton != null)
-                closeSettingsButton.onClick.AddListener(CloseSettings);
+                closeSettingsButton.onClick.AddListener(() => { PlaySoundFX(); CloseSettings(); });
 
             if (mainMenuButton != null)
-                mainMenuButton.onClick.AddListener(GoToMainMenu);
+                mainMenuButton.onClick.AddListener(() => { PlaySoundFX(); GoToMainMenu(); });
+            
+            SetupSliders();
         }
+
+        
 
         private void Update()
         {
@@ -46,6 +55,15 @@ namespace AntiqueShop.Utils
                 UnityEngine.InputSystem.Keyboard.current.escapeKey.wasPressedThisFrame)
             {
                 HandleEscapeKey();
+            }
+        }
+        
+        
+        private void PlaySoundFX()
+        {
+            if (SoundFXManager.Instance != null && clickSound != null)
+            {
+                SoundFXManager.Instance.PlaySoundFXClip(clickSound, transform, clickVolume);
             }
         }
 
@@ -75,42 +93,56 @@ namespace AntiqueShop.Utils
                 pausePanel.SetActive(true);
                 if (settingsPanel) settingsPanel.SetActive(false);
                 
-                SyncSliders();
+                SetupSliders();
             }
         }
 
-        public void OpenSettings()
+        private void OpenSettings()
         {
             if (pausePanel != null) pausePanel.SetActive(false);
             if (settingsPanel != null) settingsPanel.SetActive(true);
-            SyncSliders();
+            SetupSliders();
         }
 
-        public void CloseSettings()
+        private void CloseSettings()
         {
             if (settingsPanel) settingsPanel.SetActive(false);
             if (pausePanel) pausePanel.SetActive(true);
         }
 
-        private void SyncSliders()
-        {
-            if (masterSlider != null) masterSlider.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
-            if (musicSlider != null) musicSlider.value = PlayerPrefs.GetFloat("MusicVolume", 1f);
-            if (sfxSlider != null) sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume", 1f);
-        }
-
-        public void Resume()
+        private void Resume()
         {
             if (pausePanel != null) pausePanel.SetActive(false);
             if (settingsPanel != null) settingsPanel.SetActive(false);
-            
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
         }
 
-        public void GoToMainMenu()
+        private void GoToMainMenu()
         {
             SceneManager.LoadScene(mainMenuSceneName);
+        }
+        
+        
+        private void SetupSliders()
+        {
+            SetupSlider(masterSlider, "MasterVolume", (v) => SoundMixerManager.Instance?.SetMasterVolume(v));
+            SetupSlider(musicSlider, "MusicVolume", (v) => SoundMixerManager.Instance?.SetMusicVolume(v));
+            SetupSlider(sfxSlider, "SoundFXVolume", (v) => SoundMixerManager.Instance?.SetSoundFXVolume(v));
+        }
+
+        private void SetupSlider(Slider slider, string prefName, System.Action<float> onValueChangedAction)
+        {
+            if (!slider) return;
+
+            float savedValue = PlayerPrefs.GetFloat(prefName, 1f);
+            slider.value = savedValue;
+            onValueChangedAction?.Invoke(savedValue);
+
+            slider.onValueChanged.AddListener((value) =>
+            {
+                onValueChangedAction?.Invoke(value);
+                PlayerPrefs.SetFloat(prefName, value);
+                PlayerPrefs.Save();
+            });
         }
     }
 }

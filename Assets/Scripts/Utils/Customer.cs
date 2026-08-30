@@ -8,5 +8,6 @@ namespace AntiqueShop.Utils
     {
         [field: SerializeField] public Item Item {get; private set;}
         [field: SerializeField] public Sprite CustomerSprite {get; private set;}
+        [field: SerializeField] public AudioClip VoiceSound { get; private set; }
     }
 }

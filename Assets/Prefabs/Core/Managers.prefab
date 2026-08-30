@@ -49,24 +49,34 @@ MonoBehaviour:
   customers:
   - <Item>k__BackingField: {fileID: 11400000, guid: 490fe99fc46be0e43b059b5961b6c22e, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -2836634721577055391, guid: e02df1d5f32b5674e8b6657d32942230, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: 06dbc0504c7fb104ab36ff52c936694d, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: 47696e97aec6576499b8883e9d446c77, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: 8fa3c526122c55b4f83d4b2d38e3a3a1, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: 598601c99696d1942a77d0efbc6348fe, type: 2}
     <CustomerSprite>k__BackingField: {fileID: 1856626367842341375, guid: 6d50860ee8304f14897c1aad883c432f, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: fe23e179638eba04c9c8e460fc52d31c, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: 64ccb8d78529b7648b297eac6342676f, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -2836634721577055391, guid: e02df1d5f32b5674e8b6657d32942230, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: 06dbc0504c7fb104ab36ff52c936694d, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: 0462a2811c064344791b9e163719f2ed, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: 8fa3c526122c55b4f83d4b2d38e3a3a1, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: cd92dfc3c23042f40a7086006869e713, type: 2}
     <CustomerSprite>k__BackingField: {fileID: 1856626367842341375, guid: 6d50860ee8304f14897c1aad883c432f, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: fe23e179638eba04c9c8e460fc52d31c, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: d47894e2c9ec4c548910e4f380c72588, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -2836634721577055391, guid: e02df1d5f32b5674e8b6657d32942230, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: 06dbc0504c7fb104ab36ff52c936694d, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: 9f12dd6f01485e54f927985375872ead, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -1146602071447496514, guid: aca8e07113a81ac4d9d16834bd84b869, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: 8fa3c526122c55b4f83d4b2d38e3a3a1, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: fc77f862350e1674191a9b729ea2d753, type: 2}
     <CustomerSprite>k__BackingField: {fileID: 1856626367842341375, guid: 6d50860ee8304f14897c1aad883c432f, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: fe23e179638eba04c9c8e460fc52d31c, type: 3}
   - <Item>k__BackingField: {fileID: 11400000, guid: f058d6461566fdd4a967ba4b80a19184, type: 2}
     <CustomerSprite>k__BackingField: {fileID: -2836634721577055391, guid: e02df1d5f32b5674e8b6657d32942230, type: 3}
+    <VoiceSound>k__BackingField: {fileID: 8300000, guid: 06dbc0504c7fb104ab36ff52c936694d, type: 3}
   customerShell: {fileID: 0}
   itemShell: {fileID: 0}
   balanceText: {fileID: 0}
@@ -75,6 +85,11 @@ MonoBehaviour:
   typingDelay: 0.06
   winPanel: {fileID: 0}
   losePanel: {fileID: 0}
+  winMoneySound: {fileID: 8300000, guid: 0c949adf98cbcbc4f8519166759ef46f, type: 3}
+  loseMoneySound: {fileID: 8300000, guid: cbd6c2c1a3d20434ebe085d6bdf63266, type: 3}
+  doorSound: {fileID: 8300000, guid: 34c57ff6a993a6c45a41605c2ee182c3, type: 3}
+  effectsVolume: 1
+  speechVolume: 0.5
 --- !u!114 &9027974345531271881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +109,8 @@ MonoBehaviour:
   openSettingsButton: {fileID: 0}
   closeSettingsButton: {fileID: 0}
   mainMenuButton: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 7bb5fc2428ce0134a8ceeb9d42f99296, type: 3}
+  clickVolume: 0.5
   masterSlider: {fileID: 0}
   musicSlider: {fileID: 0}
   sfxSlider: {fileID: 0}

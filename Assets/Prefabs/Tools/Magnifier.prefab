@@ -106,7 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0bd3d31c53740b8893ffc48d61da2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Magnifier
-  <ToolSprite>k__BackingField: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 5317a7d3f28b341429391a60084e2c87, type: 3}
+  clickVolume: 1
+  closeUp: {fileID: 0}
+  itemUI: {fileID: 0}
 --- !u!60 &7646583806532379443
 PolygonCollider2D:
   m_ObjectHideFlags: 0

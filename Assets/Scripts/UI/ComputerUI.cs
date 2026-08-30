@@ -1,3 +1,4 @@
+using AntiqueShop.Core;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -19,6 +20,9 @@ namespace AntiqueShop.UI
         [SerializeField] private Color textColor;
         [SerializeField] private Color activeButtonColor;
         [SerializeField] private Color activeTextColor;
+        
+        [SerializeField] private AudioClip clickSound;
+        [SerializeField] private float clickVolume;
 
         private void OnEnable()
         {
@@ -63,6 +67,8 @@ namespace AntiqueShop.UI
             {
                 SetButtonVisual(buttons[i], i == tabIndex);
             }
+            
+            PlaySoundFX();
         }
 
         private void SetButtonVisual(Button button, bool isActive)
@@ -79,7 +85,17 @@ namespace AntiqueShop.UI
         private void CloseComputerUI()
         {
             if (computerCanvas == null) return;
+            PlaySoundFX();
             computerCanvas.SetActive(false);
+        }
+        
+        
+        private void PlaySoundFX()
+        {
+            if (SoundFXManager.Instance != null && clickSound != null)
+            {
+                SoundFXManager.Instance.PlaySoundFXClip(clickSound, transform, clickVolume);
+            }
         }
     }
 }

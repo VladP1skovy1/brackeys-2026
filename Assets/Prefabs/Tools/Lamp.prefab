@@ -106,6 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01e18c5f4c54d8b9c2b22d5d4d5f7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Lamp
+  clickSound: {fileID: 8300000, guid: 6bee285bdba49a74a9d738b6fdb47171, type: 3}
+  clickVolume: 1
   idleSprite: {fileID: -5042286635216141936, guid: 295a1fbfc472b9f4b88e25a9bd5ef909, type: 3}
   uvSprite: {fileID: -1982766869230329053, guid: bde92d3a9ff534940a74731ccba296aa, type: 3}
   lampLights:

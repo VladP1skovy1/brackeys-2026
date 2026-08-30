@@ -106,6 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdb72ac86db47f3bb9a1e9dd5ef7d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Scales
+  clickSound: {fileID: 8300000, guid: b12c4ed5d28d6da47a2d425976793f6f, type: 3}
+  clickVolume: 1
   itemInspectPoint: {fileID: 0}
   waitBeforeLiftDuration: 0
   liftDuration: 0

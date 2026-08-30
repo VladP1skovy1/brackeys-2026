@@ -28,6 +28,13 @@ namespace AntiqueShop.Core
         [SerializeField] private GameObject winPanel;
         [SerializeField] private GameObject losePanel;
         
+        [Header("Audio SFX")]
+        [SerializeField] private AudioClip winMoneySound;
+        [SerializeField] private AudioClip loseMoneySound;
+        [SerializeField] private AudioClip doorSound;
+        [SerializeField] [Range(0f, 1f)] private float effectsVolume = 1f;
+        [SerializeField] [Range(0f, 1f)] private float speechVolume = 1f;
+        
         private Customer _currentCustomer;
         private int _currentCustomerIndex;
         private float _currentBalance;
@@ -66,18 +73,22 @@ namespace AntiqueShop.Core
                 HandleFinishResult();
                 yield break;
             }
-
+            PlaySoundFX(doorSound);
             _currentCustomer = customers[_currentCustomerIndex];
             customerShell.SetupCustomer(_currentCustomer.CustomerSprite);
             yield return StartCoroutine(customerShell.SlideInRoutine());
             itemShell.SetupItem(_currentCustomer.Item);
             OnRoundChanged?.Invoke(_currentCustomer.Item);
             HandleProfitUI();
+            StartCustomerSpeech(_currentCustomer.VoiceSound);
             string textToType = _currentCustomer.Item.CustomerClaim.CustomerText; 
             yield return StartCoroutine(TypeTextRoutine(textToType));
+            StopCustomerSpeech();
             _isProcessingRound = false; 
         }
+
         
+
         private IEnumerator TypeTextRoutine(string text)
         {
             claimText.text = ""; 
@@ -96,15 +107,24 @@ namespace AntiqueShop.Core
             
             if (isAccepted)
             {
+                float profit = currentItem.RealPrice - currentItem.CustomerClaim.AskingPrice;
+
                 if (currentItem.IsAuthentic)
                 {
-                    _currentBalance += currentItem.RealPrice - currentItem.CustomerClaim.AskingPrice;
+                    _currentBalance += profit;
+
+                    PlaySoundFX(profit > 0 ? winMoneySound : loseMoneySound);
                 }
                 else
                 {
                     _currentBalance -= currentItem.CustomerClaim.AskingPrice;
+                    PlaySoundFX(loseMoneySound);
                 }
                 UpdateBalanceUI();
+            }
+            else
+            {
+                PlaySoundFX(loseMoneySound);
             }
             
             yield return StartCoroutine(customerShell.SlideOutRoutine());
@@ -134,6 +154,35 @@ namespace AntiqueShop.Core
             _isProcessingRound = true;
             StartCoroutine(ProcessDecisionRoutine(isAccepted));
         }
+        
+        
+        private void StartCustomerSpeech(AudioClip currentCustomerVoiceSound)
+        {
+            if (SoundFXManager.Instance && currentCustomerVoiceSound)
+            {
+                SoundFXManager.Instance.PlaySpeech(currentCustomerVoiceSound, speechVolume);
+            }
+        }
+        
+        private void StopCustomerSpeech()
+        {
+            if (SoundFXManager.Instance)
+            {
+                SoundFXManager.Instance.StopSpeech();
+            }
+        }
+
+        
+        
+        private void PlaySoundFX(AudioClip clip)
+        {
+            if (SoundFXManager.Instance && clip)
+            {
+                SoundFXManager.Instance.PlaySoundFXClip(clip, transform, effectsVolume);
+            }
+        }
+        
+        
         
         
         private void OnEnable()

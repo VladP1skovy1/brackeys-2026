@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &54158880 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2691060651381368335, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
+  m_PrefabInstance: {fileID: 1126905954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1001 &184068254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -236,6 +247,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &323026614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8192265490460580012, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
+  m_PrefabInstance: {fileID: 1126905954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &479355465
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,6 +850,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2691060651381368335, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
+      propertyPath: m_Value
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691060651381368335, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
+      propertyPath: m_MinValue
+      value: 0.0001
+      objectReference: {fileID: 0}
     - target: {fileID: 3402564888986635297, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -870,6 +900,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -58.3
       objectReference: {fileID: 0}
+    - target: {fileID: 8192265490460580012, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
+      propertyPath: m_Value
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192265490460580012, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
+      propertyPath: m_MinValue
+      value: 0.0001
+      objectReference: {fileID: 0}
     - target: {fileID: 8584126725458033921, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 18.2
@@ -877,6 +915,14 @@ PrefabInstance:
     - target: {fileID: 8962245190256271806, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9041239128033617064, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
+      propertyPath: m_Value
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9041239128033617064, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
+      propertyPath: m_MinValue
+      value: 0.0001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1241,6 +1287,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.Light2D
+--- !u!114 &1736876517 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9041239128033617064, guid: ba3752e8b281a1a479296ca1ed309071, type: 3}
+  m_PrefabInstance: {fileID: 1126905954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!114 &1784223614 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1752862205966739043, guid: 0165f02e3f7370646a9f87b289e9cef9, type: 3}
@@ -1461,6 +1518,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!1001 &3472971527134743578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 154978694808778305, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921079170865055121, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 07c42238cf8895a448d49a231c87013a, type: 3}
 --- !u!1001 &7798598437420061730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1581,9 +1695,11 @@ MonoBehaviour:
   settingsButton: {fileID: 1128610143}
   closeSettingsButton: {fileID: 1126905956}
   quitButton: {fileID: 184068256}
-  masterSlider: {fileID: 0}
-  musicSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 7bb5fc2428ce0134a8ceeb9d42f99296, type: 3}
+  clickVolume: 0.5
+  masterSlider: {fileID: 1736876517}
+  musicSlider: {fileID: 54158880}
+  sfxSlider: {fileID: 323026614}
 --- !u!1001 &8501833215294222037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1860,3 +1976,4 @@ SceneRoots:
   - {fileID: 1542496288}
   - {fileID: 7798598437420061730}
   - {fileID: 8501833215294222037}
+  - {fileID: 3472971527134743578}

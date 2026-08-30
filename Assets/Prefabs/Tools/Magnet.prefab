@@ -106,6 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca78c2aa6ec49e3ba3a7af5b5bc4a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.Magnet
+  clickSound: {fileID: 8300000, guid: 5317a7d3f28b341429391a60084e2c87, type: 3}
+  clickVolume: 1
   idleSprite: {fileID: 5472055364305110170, guid: 26527a8c601dc3b4bb9898c56864555e, type: 3}
   activeSprite: {fileID: 8721745523897400067, guid: 317aa8cb6a8c80f4d979a90849fa92fa, type: 3}
   inspectPoint: {fileID: 0}

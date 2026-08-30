@@ -277,7 +277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6721367040305176274, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6787248882033889355, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
       propertyPath: m_IsActive
@@ -1151,9 +1151,21 @@ PrefabInstance:
       value: Managers
       objectReference: {fileID: 0}
     - target: {fileID: 9027974345531271881, guid: e799d5c8294f803439e856558c898859, type: 3}
+      propertyPath: sfxSlider
+      value: 
+      objectReference: {fileID: 8259162721514997086}
+    - target: {fileID: 9027974345531271881, guid: e799d5c8294f803439e856558c898859, type: 3}
       propertyPath: pausePanel
       value: 
       objectReference: {fileID: 1071140992}
+    - target: {fileID: 9027974345531271881, guid: e799d5c8294f803439e856558c898859, type: 3}
+      propertyPath: musicSlider
+      value: 
+      objectReference: {fileID: 8259162721514997087}
+    - target: {fileID: 9027974345531271881, guid: e799d5c8294f803439e856558c898859, type: 3}
+      propertyPath: masterSlider
+      value: 
+      objectReference: {fileID: 8259162721514997088}
     - target: {fileID: 9027974345531271881, guid: e799d5c8294f803439e856558c898859, type: 3}
       propertyPath: resumeButton
       value: 
@@ -1550,6 +1562,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &8259162721514997086 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3278576288337502224, guid: d30fe2bbc3f60c640a832c0824741ff3, type: 3}
+  m_PrefabInstance: {fileID: 8259162721514997082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
+--- !u!114 &8259162721514997087 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8761613075379265203, guid: d30fe2bbc3f60c640a832c0824741ff3, type: 3}
+  m_PrefabInstance: {fileID: 8259162721514997082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
+--- !u!114 &8259162721514997088 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2429690735175818260, guid: d30fe2bbc3f60c640a832c0824741ff3, type: 3}
+  m_PrefabInstance: {fileID: 8259162721514997082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1001 &8501833215294222037
 PrefabInstance:
   m_ObjectHideFlags: 0

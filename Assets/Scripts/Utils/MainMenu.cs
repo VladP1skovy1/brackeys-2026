@@ -1,3 +1,4 @@
+using AntiqueShop.Core;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,10 @@ namespace AntiqueShop.Utils
         [SerializeField] private Button settingsButton;
         [SerializeField] private Button closeSettingsButton;
         [SerializeField] private Button quitButton;
+        
+        [Header("Audio")]
+        [SerializeField] private AudioClip clickSound;
+        [SerializeField] [Range(0f, 1f)] private float clickVolume = 1f;
 
         [Header("Volume Sliders")]
         [SerializeField] private Slider masterSlider;
@@ -24,19 +29,23 @@ namespace AntiqueShop.Utils
 
         private void Start()
         {
-           
             if (menuPanel != null) menuPanel.SetActive(true);
             if (settingsPanel != null) settingsPanel.SetActive(false);
+
             if (startButton != null)
-                startButton.onClick.AddListener(StartGame);
+                startButton.onClick.AddListener(() => { PlaySoundFX(); StartGame(); });
+
             if (settingsButton != null)
-                settingsButton.onClick.AddListener(OpenSettings);
+                settingsButton.onClick.AddListener(() => { PlaySoundFX(); OpenSettings(); });
+
             if (closeSettingsButton != null)
-                closeSettingsButton.onClick.AddListener(CloseSettings);
+                closeSettingsButton.onClick.AddListener(() => { PlaySoundFX(); CloseSettings(); });
+
             if (quitButton != null)
-                quitButton.onClick.AddListener(QuitGame);
+                quitButton.onClick.AddListener(() => { PlaySoundFX(); QuitGame(); });
             
-            SyncSliders();
+            SetupSliders();
+
         }
 
         private void StartGame()
@@ -48,7 +57,6 @@ namespace AntiqueShop.Utils
         {
             if (menuPanel != null) menuPanel.SetActive(false);
             if (settingsPanel != null) settingsPanel.SetActive(true);
-            SyncSliders();
         }
 
         private void CloseSettings()
@@ -57,11 +65,35 @@ namespace AntiqueShop.Utils
             if (menuPanel != null) menuPanel.SetActive(true);
         }
 
-        private void SyncSliders()
+        private void SetupSliders()
         {
-            if (masterSlider != null) masterSlider.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
-            if (musicSlider != null) musicSlider.value = PlayerPrefs.GetFloat("MusicVolume", 1f);
-            if (sfxSlider != null) sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume", 1f);
+            SetupSlider(masterSlider, "MasterVolume", (v) => SoundMixerManager.Instance?.SetMasterVolume(v));
+            SetupSlider(musicSlider, "MusicVolume", (v) => SoundMixerManager.Instance?.SetMusicVolume(v));
+            SetupSlider(sfxSlider, "SoundFXVolume", (v) => SoundMixerManager.Instance?.SetSoundFXVolume(v));
+        }
+        
+        private void SetupSlider(Slider slider, string prefName, System.Action<float> onValueChangedAction)
+        {
+            if (slider == null) return;
+
+            float savedValue = PlayerPrefs.GetFloat(prefName, 1f);
+            slider.value = savedValue;
+            onValueChangedAction?.Invoke(savedValue);
+
+            slider.onValueChanged.AddListener((value) =>
+            {
+                onValueChangedAction?.Invoke(value);
+                PlayerPrefs.SetFloat(prefName, value);
+                PlayerPrefs.Save();
+            });
+        }
+        
+        private void PlaySoundFX()
+        {
+            if (SoundFXManager.Instance != null && clickSound != null)
+            {
+                SoundFXManager.Instance.PlaySoundFXClip(clickSound, transform, clickVolume);
+            }
         }
 
         private void QuitGame()
