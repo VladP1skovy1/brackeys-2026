@@ -10,10 +10,12 @@ namespace AntiqueShop.Utils
         [Header("Panels")]
         [SerializeField] private GameObject menuPanel;
         [SerializeField] private GameObject settingsPanel;
+        [SerializeField] private GameObject letterPanel;
         [SerializeField] private string gameSceneName = "MainScene";
 
         [Header("Buttons")]
         [SerializeField] private Button startButton;
+        [SerializeField] private Button nextButton;
         [SerializeField] private Button settingsButton;
         [SerializeField] private Button closeSettingsButton;
         [SerializeField] private Button quitButton;
@@ -33,13 +35,16 @@ namespace AntiqueShop.Utils
             if (settingsPanel != null) settingsPanel.SetActive(false);
 
             if (startButton != null)
-                startButton.onClick.AddListener(() => { PlaySoundFX(); StartGame(); });
+                startButton.onClick.AddListener(() => { PlaySoundFX(); OpenPanel(letterPanel); });
+            
+            if (nextButton != null)
+                nextButton.onClick.AddListener(() => { PlaySoundFX(); StartGame(); });
 
             if (settingsButton != null)
-                settingsButton.onClick.AddListener(() => { PlaySoundFX(); OpenSettings(); });
+                settingsButton.onClick.AddListener(() => { PlaySoundFX(); OpenPanel(settingsPanel); });
 
             if (closeSettingsButton != null)
-                closeSettingsButton.onClick.AddListener(() => { PlaySoundFX(); CloseSettings(); });
+                closeSettingsButton.onClick.AddListener(() => { PlaySoundFX(); OpenPanel(menuPanel); });
 
             if (quitButton != null)
                 quitButton.onClick.AddListener(() => { PlaySoundFX(); QuitGame(); });
@@ -47,22 +52,17 @@ namespace AntiqueShop.Utils
             SetupSliders();
 
         }
-
+        
         private void StartGame()
         {
             SceneManager.LoadScene(gameSceneName);
         }
-
-        private void OpenSettings()
+        
+        private void OpenPanel(GameObject targetPanel)
         {
-            if (menuPanel != null) menuPanel.SetActive(false);
-            if (settingsPanel != null) settingsPanel.SetActive(true);
-        }
-
-        private void CloseSettings()
-        {
-            if (settingsPanel != null) settingsPanel.SetActive(false);
-            if (menuPanel != null) menuPanel.SetActive(true);
+            if (menuPanel) menuPanel.SetActive(menuPanel == targetPanel);
+            if (settingsPanel) settingsPanel.SetActive(settingsPanel == targetPanel);
+            if (letterPanel) letterPanel.SetActive(letterPanel == targetPanel);
         }
 
         private void SetupSliders()
