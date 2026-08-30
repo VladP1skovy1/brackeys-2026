@@ -8,11 +8,15 @@ namespace AntiqueShop.Tools
     public abstract class Tool : MonoBehaviour, IPointerClickHandler
     {
         protected Item CurrentItem { get; private set; }
+        
+        [SerializeField] private AudioClip clickSound;
+        [SerializeField] private float clickVolume;
 
         public void OnPointerClick(PointerEventData eventData)
         {
             if (eventData.button == PointerEventData.InputButton.Left)
             {
+                PlaySoundFX();
                 OnToolClick();
             }
         }
@@ -22,6 +26,14 @@ namespace AntiqueShop.Tools
         protected virtual void UpdateItem(Item item)
         {
             CurrentItem = item;
+        }
+        
+        private void PlaySoundFX()
+        {
+            if (SoundFXManager.Instance != null && clickSound != null)
+            {
+                SoundFXManager.Instance.PlaySoundFXClip(clickSound, transform, clickVolume);
+            }
         }
         
         private void OnEnable()

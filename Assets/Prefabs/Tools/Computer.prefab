@@ -130,8 +130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5264e87f5d7066e408afa85a457649fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Tools.PC
-  <ToolSprite>k__BackingField: {fileID: 0}
-  articles: []
+  clickSound: {fileID: 8300000, guid: fe0afca16e70d5b4cb72b5216b39cc85, type: 3}
+  clickVolume: 1
+  computerWindow: {fileID: 0}
 --- !u!60 &4342850622083444145
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -817,6 +817,8 @@ MonoBehaviour:
   textColor: {r: 0.9215687, g: 0.9294118, b: 0.91372555, a: 1}
   activeButtonColor: {r: 0.9215687, g: 0.9294118, b: 0.91372555, a: 1}
   activeTextColor: {r: 0.08235294, g: 0.1137255, b: 0.15686275, a: 1}
+  clickSound: {fileID: 8300000, guid: fe0afca16e70d5b4cb72b5216b39cc85, type: 3}
+  clickVolume: 1
 --- !u!1 &8032846282991045974
 GameObject:
   m_ObjectHideFlags: 0
