@@ -103,7 +103,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4202854289389537661, guid: 01653d1d12f2d3e4e82e584d4b8e361b, type: 3}
       propertyPath: m_Name
-      value: Button
+      value: Back
       objectReference: {fileID: 0}
     - target: {fileID: 6833456546378895881, guid: 01653d1d12f2d3e4e82e584d4b8e361b, type: 3}
       propertyPath: m_Pivot.x

@@ -7,16 +7,19 @@ namespace AntiqueShop.Utils
 {
     public class PauseMenu : MonoBehaviour
     {
-        [Header("Panels")] [SerializeField] private GameObject pausePanel;
+        [Header("Panels")] 
+        [SerializeField] private GameObject pausePanel;
         [SerializeField] private GameObject settingsPanel;
         [SerializeField] private string mainMenuSceneName = "MainMenu";
 
-        [Header("Buttons")] [SerializeField] private Button resumeButton;
-        [SerializeField] private Button openSettingsButton;
-        [SerializeField] private Button closeSettingsButton;
+        [Header("Buttons")] 
+        [SerializeField] private Button resumeButton;
+        [SerializeField] private Button settingsButton;
+        [SerializeField] private Button backToPauseMenuButton;
         [SerializeField] private Button mainMenuButton;
 
-        [Header("Audio")] [SerializeField] private AudioClip clickSound;
+        [Header("Audio")] 
+        [SerializeField] private AudioClip clickSound;
         [SerializeField] [Range(0f, 1f)] private float clickVolume;
 
 
@@ -32,15 +35,15 @@ namespace AntiqueShop.Utils
                     Resume();
                 });
 
-            if (openSettingsButton != null)
-                openSettingsButton.onClick.AddListener(() =>
+            if (settingsButton != null)
+                settingsButton.onClick.AddListener(() =>
                 {
                     PlaySoundFX();
                     OpenSettings();
                 });
 
-            if (closeSettingsButton != null)
-                closeSettingsButton.onClick.AddListener(() =>
+            if (backToPauseMenuButton != null)
+                backToPauseMenuButton.onClick.AddListener(() =>
                 {
                     PlaySoundFX();
                     CloseSettings();

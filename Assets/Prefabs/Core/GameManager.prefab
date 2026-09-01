@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1626384136830395125}
   - component: {fileID: 3403717767879078707}
   - component: {fileID: 9027974345531271881}
+  - component: {fileID: 4659049062250407206}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -106,11 +107,22 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   mainMenuSceneName: MainMenu
   resumeButton: {fileID: 0}
-  openSettingsButton: {fileID: 0}
-  closeSettingsButton: {fileID: 0}
+  settingsButton: {fileID: 0}
+  backToPauseMenuButton: {fileID: 0}
   mainMenuButton: {fileID: 0}
   clickSound: {fileID: 8300000, guid: 7bb5fc2428ce0134a8ceeb9d42f99296, type: 3}
   clickVolume: 0.5
-  masterSlider: {fileID: 0}
-  musicSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
+--- !u!114 &4659049062250407206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5178958837833188574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3ee25630feeb346b6a4d6f35044aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Buttons.WindowButtons
+  acceptButton: {fileID: 0}
+  passButton: {fileID: 0}
