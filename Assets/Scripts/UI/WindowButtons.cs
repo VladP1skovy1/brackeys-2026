@@ -1,4 +1,5 @@
 using System;
+using AntiqueShop.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,12 +16,20 @@ namespace AntiqueShop.UI
         {
             acceptButton.onClick.AddListener(PressAccept);
             passButton.onClick.AddListener(PressPass);
+            GameManager.OnButtonsStateChanged += SetInteractable;
         }
         
         private void OnDisable()
         {
             acceptButton.onClick.RemoveListener(PressAccept);
             passButton.onClick.RemoveListener(PressPass);
+            GameManager.OnButtonsStateChanged -= SetInteractable;
+        }
+        
+        private void SetInteractable(bool state)
+        {
+            acceptButton.interactable = state;
+            passButton.interactable = state;
         }
 
         private void PressAccept()

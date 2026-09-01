@@ -39,6 +39,7 @@ namespace AntiqueShop.Core
         private bool _isProcessingRound;
         
         public static event Action<Item> OnRoundChanged; 
+        public static event Action<bool> OnButtonsStateChanged;
         
         
         void Start()
@@ -46,6 +47,7 @@ namespace AntiqueShop.Core
             _currentBalance = 0f;
             _currentCustomerIndex = 0;
             _isProcessingRound = true;
+            OnButtonsStateChanged?.Invoke(false);
             itemShell.HideItem();
             claimText.text = "";
             UpdateBalanceUI();
@@ -83,6 +85,7 @@ namespace AntiqueShop.Core
             yield return StartCoroutine(TypeTextRoutine(textToType));
             StopCustomerSpeech();
             _isProcessingRound = false; 
+            OnButtonsStateChanged?.Invoke(true);
         }
 
         
@@ -150,6 +153,7 @@ namespace AntiqueShop.Core
         {
             if (_isProcessingRound) return;
             _isProcessingRound = true;
+            OnButtonsStateChanged?.Invoke(false);
             StartCoroutine(ProcessDecisionRoutine(isAccepted));
         }
         
