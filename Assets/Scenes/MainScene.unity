@@ -330,6 +330,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+--- !u!114 &30737843 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7640352470303411632, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+  m_PrefabInstance: {fileID: 30737842}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &36745790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,17 +1043,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8426493903921198362, guid: 7b38e2757599eb147b9703d7150ac714, type: 3}
   m_PrefabInstance: {fileID: 1780047779829962897}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2134490628 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1271136195395695061, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
-  m_PrefabInstance: {fileID: 30737842}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &1256606694597511157
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1382,7 +1382,7 @@ PrefabInstance:
     - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
       propertyPath: potentialProfitText
       value: 
-      objectReference: {fileID: 2134490628}
+      objectReference: {fileID: 30737843}
     - target: {fileID: 4659049062250407206, guid: e799d5c8294f803439e856558c898859, type: 3}
       propertyPath: passButton
       value: 
