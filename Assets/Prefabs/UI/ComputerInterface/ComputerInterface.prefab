@@ -806,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a4cb63cbd60fe4db6d3164c7f23cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.UI.ComputerUI
-  computerCanvas: {fileID: 0}
+  computerCanvas: {fileID: 6456447267658329984}
   pages:
   - {fileID: 6585855327691136700}
   - {fileID: 3245313622540684128}

@@ -1513,10 +1513,6 @@ PrefabInstance:
       propertyPath: m_TextStyleHashCode
       value: -1183493901
       objectReference: {fileID: 0}
-    - target: {fileID: 6131771332902387541, guid: d95dc5aef1cc1274882063eb1d7d1c8a, type: 3}
-      propertyPath: computerCanvas
-      value: 
-      objectReference: {fileID: 36745790}
     - target: {fileID: 6177533121792021906, guid: d95dc5aef1cc1274882063eb1d7d1c8a, type: 3}
       propertyPath: m_TextStyleHashCode
       value: -1183493901
