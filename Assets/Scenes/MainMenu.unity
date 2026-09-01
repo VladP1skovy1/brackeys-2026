@@ -1464,6 +1464,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!4 &504233113561124406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647708468118639526}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &647708468118639526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504233113561124406}
+  - component: {fileID: 1111444467127802179}
+  m_Layer: 0
+  m_Name: MenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1111444467127802179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647708468118639526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd7120270afed1448fc4e10a16758f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Utils.MainMenu
+  menuPanel: {fileID: 803417083}
+  settingsPanel: {fileID: 1126905957}
+  letterPanel: {fileID: 1996422126}
+  gameSceneName: MainScene
+  startButton: {fileID: 2049538467}
+  nextButton: {fileID: 91626955}
+  settingsButton: {fileID: 1128610143}
+  closeSettingsButton: {fileID: 1126905956}
+  quitButton: {fileID: 184068256}
+  clickSound: {fileID: 8300000, guid: 7bb5fc2428ce0134a8ceeb9d42f99296, type: 3}
+  clickVolume: 0.5
 --- !u!1001 &3472971527134743578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1618,132 +1673,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2180d4efe206aff44962ed69f0b24f40, type: 3}
---- !u!1001 &7798598437420061730
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626384136830395125, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: winPanel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: claimText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: itemShell
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: losePanel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: balanceText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: customerShell
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: potentialProfitText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5178958837833188574, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 9027974345531271881, guid: e799d5c8294f803439e856558c898859, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3403717767879078707, guid: e799d5c8294f803439e856558c898859, type: 3}
-    - {fileID: 9027974345531271881, guid: e799d5c8294f803439e856558c898859, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5178958837833188574, guid: e799d5c8294f803439e856558c898859, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7798598437420061732}
-  m_SourcePrefab: {fileID: 100100000, guid: e799d5c8294f803439e856558c898859, type: 3}
---- !u!1 &7798598437420061731 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5178958837833188574, guid: e799d5c8294f803439e856558c898859, type: 3}
-  m_PrefabInstance: {fileID: 7798598437420061730}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7798598437420061732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7798598437420061731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd7120270afed1448fc4e10a16758f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AntiqueShop.Utils.MainMenu
-  menuPanel: {fileID: 803417083}
-  settingsPanel: {fileID: 1126905957}
-  letterPanel: {fileID: 1996422126}
-  gameSceneName: MainScene
-  startButton: {fileID: 2049538467}
-  nextButton: {fileID: 91626955}
-  settingsButton: {fileID: 1128610143}
-  closeSettingsButton: {fileID: 1126905956}
-  quitButton: {fileID: 184068256}
-  clickSound: {fileID: 8300000, guid: 7bb5fc2428ce0134a8ceeb9d42f99296, type: 3}
-  clickVolume: 0.5
 --- !u!1001 &8501833215294222037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2013,6 +1942,6 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1975640729}
   - {fileID: 1542496288}
-  - {fileID: 7798598437420061730}
+  - {fileID: 504233113561124406}
   - {fileID: 3472971527134743578}
   - {fileID: 8501833215294222037}
