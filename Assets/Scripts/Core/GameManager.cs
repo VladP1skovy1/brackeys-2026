@@ -5,6 +5,7 @@ using AntiqueShop.Items;
 using AntiqueShop.UI;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace AntiqueShop.Core
 {
@@ -19,7 +20,8 @@ namespace AntiqueShop.Core
         [SerializeField] private ItemUI itemShell;
         [SerializeField] private TextMeshProUGUI balanceText;
         [SerializeField] private TextMeshProUGUI potentialProfitText;
-        [SerializeField] private TextMeshProUGUI claimText; 
+        [SerializeField] private TextMeshProUGUI claimText;
+        [SerializeField] private Button claimPanel;
         [SerializeField] private float typingDelay;
         
         [Header("End Game Panels")]
@@ -37,6 +39,7 @@ namespace AntiqueShop.Core
         private int _currentCustomerIndex;
         private float _currentBalance;
         private bool _isProcessingRound;
+        private bool _isTyping;
         
         public static event Action<Item> OnRoundChanged; 
         public static event Action<bool> OnButtonsStateChanged;
@@ -92,12 +95,19 @@ namespace AntiqueShop.Core
 
         private IEnumerator TypeTextRoutine(string text)
         {
+            _isTyping = true;
             claimText.text = ""; 
             foreach (char letter in text.ToCharArray())
             {
+                if (!_isTyping)
+                {
+                    claimText.text = text;
+                    break;
+                }
                 claimText.text += letter;
                 yield return new WaitForSeconds(typingDelay); 
             }
+            _isTyping = false;
         }
         
         private IEnumerator ProcessDecisionRoutine(bool isAccepted)
@@ -184,12 +194,20 @@ namespace AntiqueShop.Core
             }
         }
         
+        private void SkipDialogue()
+        {
+            if (!_isTyping) return;
+            _isTyping = false; 
+            StopCustomerSpeech();
+        }
+        
         
         
         
         private void OnEnable()
         {
             WindowButtons.OnDecisionMade += CheckRound;
+            claimPanel.onClick.AddListener(SkipDialogue);
         }
 
         
@@ -197,6 +215,7 @@ namespace AntiqueShop.Core
         private void OnDisable()
         {
             WindowButtons.OnDecisionMade -= CheckRound;
+            claimPanel.onClick.RemoveListener(SkipDialogue);
         }
 
         
