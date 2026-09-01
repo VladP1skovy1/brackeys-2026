@@ -1,7 +1,7 @@
 using AntiqueShop.Items;
 using UnityEngine;
 
-namespace AntiqueShop.Utils
+namespace AntiqueShop.Core
 {
     [System.Serializable]
     public class Customer

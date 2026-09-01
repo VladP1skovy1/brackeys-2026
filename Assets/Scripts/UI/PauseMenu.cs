@@ -1,9 +1,9 @@
 using AntiqueShop.Core;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-namespace AntiqueShop.Utils
+namespace AntiqueShop.UI
 {
     public class PauseMenu : MonoBehaviour
     {

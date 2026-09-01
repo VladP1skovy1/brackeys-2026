@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using AntiqueShop.Items;
-using AntiqueShop.Utils;
+using AntiqueShop.Lighting;
 using UnityEngine;
 
 namespace AntiqueShop.UI

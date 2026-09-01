@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace AntiqueShop.Buttons
+namespace AntiqueShop.UI
 {
     [RequireComponent(typeof(Button))]
     public class RestartButton : MonoBehaviour

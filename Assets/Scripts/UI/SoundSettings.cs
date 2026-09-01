@@ -2,7 +2,7 @@ using AntiqueShop.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace AntiqueShop.Utils
+namespace AntiqueShop.UI
 {
     public class SoundSettings : MonoBehaviour
     {

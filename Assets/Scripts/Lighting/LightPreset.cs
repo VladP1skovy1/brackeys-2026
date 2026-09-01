@@ -1,8 +1,7 @@
 ﻿using System;
-using AntiqueShop.Utils;
 using UnityEngine.Rendering.Universal;
 
-namespace AntiqueShop.UI
+namespace AntiqueShop.Lighting
 {
     [Serializable]
     public struct LightPreset

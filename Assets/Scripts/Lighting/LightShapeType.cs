@@ -1,4 +1,4 @@
-﻿namespace AntiqueShop.Utils
+﻿namespace AntiqueShop.Lighting
 {
     public enum LightShapeType
     {

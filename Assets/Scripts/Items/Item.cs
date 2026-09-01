@@ -1,4 +1,3 @@
-using AntiqueShop.Utils;
 using UnityEngine;
 
 namespace AntiqueShop.Items
