@@ -7,7 +7,8 @@ namespace AntiqueShop.UI
 {
     public class CloseUpView : MonoBehaviour
     {
-        [SerializeField] private Image view;
+        [SerializeField] private GameObject visualPanel;
+        [SerializeField] private Image image;
 
         private void Awake() => Hide();
 
@@ -19,23 +20,22 @@ namespace AntiqueShop.UI
 
         public void Toggle(Sprite sprite)
         {
-            if (sprite == null || (view.sprite == sprite && view.color.a > 0))
+            if (!sprite || (Equals(image.sprite, sprite) && visualPanel.activeSelf))
             {
                 Hide();
                 return;
             }
 
-            view.sprite = sprite;
-            Color c = view.color;
-            c.a = 1f;
-            view.color = c;
+            image.sprite = sprite;
+            visualPanel.SetActive(true);
         }
 
         private void Hide()
         {
-            Color c = view.color;
-            c.a = 0f;
-            view.color = c;
+            if (visualPanel)
+            {
+                visualPanel.SetActive(false);
+            }
         }
     }
 }

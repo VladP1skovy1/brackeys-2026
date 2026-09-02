@@ -1,4 +1,4 @@
-using AntiqueShop.Utils;
+using AntiqueShop.Lighting;
 using UnityEngine;
 
 namespace AntiqueShop.Items

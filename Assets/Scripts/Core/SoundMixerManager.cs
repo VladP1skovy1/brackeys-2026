@@ -20,6 +20,19 @@ namespace AntiqueShop.Core
                 Destroy(gameObject);
             }
         }
+        
+        private void Start()
+        {
+            LoadSavedVolumes();
+        }
+
+        private void LoadSavedVolumes()
+        {
+            if (!audioMixer) return;
+            SetMasterVolume(PlayerPrefs.GetFloat("MasterVolume", 1f));
+            SetMusicVolume(PlayerPrefs.GetFloat("MusicVolume", 1f));
+            SetSoundFXVolume(PlayerPrefs.GetFloat("SoundFXVolume", 1f));
+        }
 
         public void SetMasterVolume(float volume)
         {
